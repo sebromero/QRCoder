@@ -1,11 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'QRCoder', :exclusive => true do
-  pod "QRCoder", :path => "../"
+use_frameworks!
+
+target 'QRCoderExampleOSX', :exclusive => true do
+    platform :osx, '10.9'
+    pod "QRCoder", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
-  pod "QRCoder", :path => "../"
-
-  pod 'FBSnapshotTestCase'
+target 'QRCoderOSXTests', :exclusive => true do
+    platform :osx, '10.9'
+    pod "QRCoder", :path => "../"
 end

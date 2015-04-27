@@ -1,0 +1,14 @@
+PODS:
+  - QRCoder (0.1.0)
+
+DEPENDENCIES:
+  - QRCoder (from `../`)
+
+EXTERNAL SOURCES:
+  QRCoder:
+    :path: ../
+
+SPEC CHECKSUMS:
+  QRCoder: 077894b61bdbb3695ec7a75c6b30a56da0abf468
+
+COCOAPODS: 0.36.3

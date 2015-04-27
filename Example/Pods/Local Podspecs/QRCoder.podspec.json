@@ -1,0 +1,26 @@
+{
+  "name": "QRCoder",
+  "version": "0.1.0",
+  "summary": "A QR code generator and reader for OSX and iOS written in Swift.",
+  "description": "Since OSX 10.9 apple offers a CI filter to generate QR codes.\nHowever, scaling the QR code to the desired size without blurring\nthe image doesn't work out of the box. That's why I created this library.\n",
+  "homepage": "https://github.com/sbhklr/QRCodeGenerator",
+  "license": "MIT",
+  "authors": {
+    "Sebastian Hunkeler": "sebastian.hunkeler@iml.unibe.ch"
+  },
+  "source": {
+    "git": "https://github.com/sbhklr/QRCodeGenerator.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/sbhklr",
+  "platforms": {
+    "osx": "10.9"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/QRCoder.swift",
+  "frameworks": [
+    "Foundation",
+    "AppKit",
+    "QuartzCore"
+  ]
+}
