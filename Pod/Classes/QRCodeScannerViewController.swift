@@ -21,6 +21,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     //MARK: Lifecycle
     
     required public init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
         highlightView = UIView()
         highlightView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin | UIViewAutoresizing.FlexibleBottomMargin
         highlightView.layer.borderColor = UIColor.greenColor().CGColor
@@ -34,7 +35,6 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         
         output = AVCaptureMetadataOutput()
         previewLayer = AVCaptureVideoPreviewLayer.layerWithSession(session) as! AVCaptureVideoPreviewLayer
-        super.init(coder: aDecoder)
     }
     
     override public func viewDidLayoutSubviews() {
