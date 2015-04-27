@@ -43,7 +43,7 @@ public class QRCodeGenerator {
         return colorFilter.outputImage
     }
     
-    public func imageFromString(value:String, size:CGSize) -> QRImage {
+    public func createImage(value:String, size:CGSize) -> QRImage {
         let stringData = value.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: true)
         let qrFilter = CIFilter(name: "CIQRCodeGenerator")
         qrFilter.setDefaults()

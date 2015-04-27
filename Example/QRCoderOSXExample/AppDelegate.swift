@@ -19,7 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         let generator = QRCodeGenerator()
-        imageView.image = generator.imageFromString("Hello world!",size: CGSizeMake(200,200))
+        imageView.image = generator.createImage("Hello world!",size: CGSizeMake(200,200))
     }
     
 }

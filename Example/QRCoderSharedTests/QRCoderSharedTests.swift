@@ -21,7 +21,7 @@ class QRCoderSharedTests: XCTestCase {
     }
     
     func testImageFromString() {
-        let image = qrCodeGenerator.imageFromString(qrCodeContent, size: imageSize)
+        let image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize)
         XCTAssertNotNil(image)
         XCTAssertEqual(image.size, imageSize)
     }
@@ -29,16 +29,16 @@ class QRCoderSharedTests: XCTestCase {
     func testImageWithDifferentCorrectionLevels(){
         var image:QRImage?
         qrCodeGenerator.correctionLevel = .H
-        image = qrCodeGenerator.imageFromString(qrCodeContent, size: imageSize)
+        image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize)
         XCTAssertNotNil(image)
         qrCodeGenerator.correctionLevel = .L
-        image = qrCodeGenerator.imageFromString(qrCodeContent, size: imageSize)
+        image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize)
         XCTAssertNotNil(image)
         qrCodeGenerator.correctionLevel = .M
-        image = qrCodeGenerator.imageFromString(qrCodeContent, size: imageSize)
+        image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize)
         XCTAssertNotNil(image)
         qrCodeGenerator.correctionLevel = .Q
-        image = qrCodeGenerator.imageFromString(qrCodeContent, size: imageSize)
+        image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize)
         XCTAssertNotNil(image)
     }
     
