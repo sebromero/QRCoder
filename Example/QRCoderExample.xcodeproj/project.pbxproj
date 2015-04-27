@@ -18,6 +18,7 @@
 		F3529A181AEEC47000642EC3 /* QRCoderiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3529A171AEEC47000642EC3 /* QRCoderiOSTests.swift */; };
 		F3529A231AEEE28600642EC3 /* QRCoderSharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3529A221AEEE28600642EC3 /* QRCoderSharedTests.swift */; };
 		F3529A241AEEE28600642EC3 /* QRCoderSharedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3529A221AEEE28600642EC3 /* QRCoderSharedTests.swift */; };
+		F3914C6A1AEEE7C600EA3F5D /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3914C691AEEE7C600EA3F5D /* ScannerViewController.swift */; };
 		F3B3C79A1AEEACF30011548D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B3C7991AEEACF30011548D /* AppDelegate.swift */; };
 		F3B3C79C1AEEACF30011548D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3B3C79B1AEEACF30011548D /* Images.xcassets */; };
 		F3B3C79F1AEEACF30011548D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3B3C79D1AEEACF30011548D /* MainMenu.xib */; };
@@ -73,6 +74,7 @@
 		F3529A1F1AEED1F700642EC3 /* Pods-QRCoderOSXExample.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderOSXExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample.debug.xcconfig"; sourceTree = "<group>"; };
 		F3529A201AEED1F700642EC3 /* Pods-QRCoderOSXExample.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderOSXExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample.release.xcconfig"; sourceTree = "<group>"; };
 		F3529A221AEEE28600642EC3 /* QRCoderSharedTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCoderSharedTests.swift; sourceTree = "<group>"; };
+		F3914C691AEEE7C600EA3F5D /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		F3B3C7951AEEACF30011548D /* QRCoderOSXExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCoderOSXExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3B3C7981AEEACF30011548D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3B3C7991AEEACF30011548D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				F3529A081AEEC47000642EC3 /* Images.xcassets */,
 				F3529A0A1AEEC47000642EC3 /* LaunchScreen.xib */,
 				F35299FF1AEEC47000642EC3 /* Supporting Files */,
+				F3914C691AEEE7C600EA3F5D /* ScannerViewController.swift */,
 			);
 			path = QRCoderiOSExample;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3529A041AEEC47000642EC3 /* ViewController.swift in Sources */,
+				F3914C6A1AEEE7C600EA3F5D /* ScannerViewController.swift in Sources */,
 				F3529A021AEEC47000642EC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,7 +835,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeExampleiOS.app/QRCodeExampleiOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCoderiOSExample.app/QRCoderiOSExample";
 			};
 			name = Debug;
 		};
@@ -854,7 +858,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCodeExampleiOS.app/QRCodeExampleiOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCoderiOSExample.app/QRCoderiOSExample";
 			};
 			name = Release;
 		};
@@ -928,7 +932,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCoderExampleOSX.app/Contents/MacOS/QRCoderExampleOSX";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRCoderOSXExample.app/Contents/MacOS/QRCoderOSXExample";
 			};
 			name = Debug;
 		};

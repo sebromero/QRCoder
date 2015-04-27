@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  QRCoder: a1efa524e1c0f391dbb66e68858cc638f2d49e32
+  QRCoder: ed04446dcb8aeb3baf36f0c56a88b741da071f9f
 
 COCOAPODS: 0.36.3

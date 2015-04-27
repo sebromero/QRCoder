@@ -16,7 +16,7 @@ s.social_media_url = 'https://twitter.com/sbhklr'
 
 s.requires_arc = true
 s.ios.source_files = 'Pod/Classes/*.swift'
-s.osx.source_files = 'Pod/Classes/*.swift'
+s.osx.source_files = 'Pod/Classes/QRCodeGenerator.swift'
 
 s.ios.deployment_target = "8.0"
 s.osx.deployment_target = "10.9"
