@@ -1,0 +1,6 @@
+framework module Pods_QRCoderiOSTests {
+  umbrella header "Pods-QRCoderiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

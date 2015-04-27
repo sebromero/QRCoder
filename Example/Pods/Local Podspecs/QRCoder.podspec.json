@@ -13,14 +13,25 @@
     "tag": "0.1.0"
   },
   "social_media_url": "https://twitter.com/sbhklr",
-  "platforms": {
-    "osx": "10.9"
-  },
   "requires_arc": true,
-  "source_files": "Pod/Classes/QRCoder.swift",
-  "frameworks": [
-    "Foundation",
-    "AppKit",
-    "QuartzCore"
-  ]
+  "ios": {
+    "source_files": "Pod/Classes/*.swift",
+    "frameworks": [
+      "Foundation",
+      "UIKit",
+      "QuartzCore"
+    ]
+  },
+  "osx": {
+    "source_files": "Pod/Classes/*.swift",
+    "frameworks": [
+      "Foundation",
+      "AppKit",
+      "QuartzCore"
+    ]
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.9"
+  }
 }

@@ -14,12 +14,14 @@ s.author           = { "Sebastian Hunkeler" => "sebastian.hunkeler@iml.unibe.ch"
 s.source           = { :git => "https://github.com/sbhklr/QRCodeGenerator.git", :tag => s.version.to_s }
 s.social_media_url = 'https://twitter.com/sbhklr'
 
-s.platform     = :osx, '10.9'
 s.requires_arc = true
+s.ios.source_files = 'Pod/Classes/*.swift'
+s.osx.source_files = 'Pod/Classes/*.swift'
 
-s.source_files = 'Pod/Classes/QRCoder.swift'
+s.ios.deployment_target = "8.0"
+s.osx.deployment_target = "10.9"
 
-#s.public_header_files = 'Pod/Classes/**/*.h'
-s.frameworks = 'Foundation', 'AppKit', 'QuartzCore'
-# s.dependency 'AFNetworking', '~> 2.3'
+s.ios.frameworks = 'Foundation', 'UIKit', 'QuartzCore'
+s.osx.frameworks = 'Foundation', 'AppKit', 'QuartzCore'
+
 end

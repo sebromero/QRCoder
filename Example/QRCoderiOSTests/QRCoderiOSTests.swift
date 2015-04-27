@@ -1,18 +1,19 @@
 //
-//  QRCoderOSXTests.swift
-//  QRCoderOSXTests
+//  QRCodeiOSTests.swift
+//  QRCodeiOSTests
 //
-//  Created by Sebastian Hunkeler on 25/04/15.
+//  Created by Sebastian Hunkeler on 27/04/15.
 //  Copyright (c) 2015 Sebastian Hunkeler. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 import XCTest
 import QRCoder
 
-class QRCoderOSXTests: XCTestCase {
+class QRCoderiOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
+
     }
 }
