@@ -74,7 +74,7 @@ public class QRCodeGenerator {
         let newImage = NSImage(size: size)
         newImage.lockFocus()
         let contextPointer = NSGraphicsContext.currentContext()!.graphicsPort
-        let context:CGContextRef
+        var context:CGContextRef!
         
         //OSX >= 10.10 supports CGContext property
         if NSGraphicsContext.currentContext()!.respondsToSelector(Selector("CGContext")) {
