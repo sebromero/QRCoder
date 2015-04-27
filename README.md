@@ -1,6 +1,6 @@
 # QRCoder
 
-[![CI Status](http://img.shields.io/travis/Sebastian Hunkeler/QRCoder.svg?style=flat)](https://travis-ci.org/Sebastian Hunkeler/QRCoder)
+[![CI Status](http://img.shields.io/travis/sbhklr/QRCoder.svg?style=flat)](https://travis-ci.org/sbhklr/QRCoder)
 [![Version](https://img.shields.io/cocoapods/v/QRCoder.svg?style=flat)](http://cocoapods.org/pods/QRCoder)
 [![License](https://img.shields.io/cocoapods/l/QRCoder.svg?style=flat)](http://cocoapods.org/pods/QRCoder)
 [![Platform](https://img.shields.io/cocoapods/p/QRCoder.svg?style=flat)](http://cocoapods.org/pods/QRCoder)
@@ -22,7 +22,7 @@ pod "QRCoder"
 
 ## Author
 
-Sebastian Hunkeler, sebastian.hunkeler@iml.unibe.ch
+Sebastian Hunkeler, hello@sbhklr.ch
 
 ## License
 
