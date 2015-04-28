@@ -11,4 +11,7 @@ import QRCoder
 
 class ScannerViewController : QRCodeScannerViewController {
     
+    @IBAction func goBack(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EXX-7K-sG1">
+                                <rect key="frame" x="-32" y="0.0" width="648" height="600"/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77g-Ko-r0G">
                                 <rect key="frame" x="240" y="540" width="120" height="30"/>
                                 <constraints>
@@ -28,9 +32,6 @@
                                     <segue destination="rod-wF-m7F" kind="presentation" id="r3k-8D-d5D"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EXX-7K-sG1">
-                                <rect key="frame" x="-32" y="0.0" width="648" height="600"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -67,7 +68,25 @@
                     <view key="view" contentMode="scaleToFill" id="2og-BC-fgM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4t-rI-hMu">
+                                <rect key="frame" x="283" y="550" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="pF8-XL-fV1"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack:" destination="rod-wF-m7F" eventType="touchUpInside" id="osk-jV-Ju7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="j4t-rI-hMu" secondAttribute="centerX" id="OfY-Ki-REc"/>
+                            <constraint firstItem="FGJ-tA-WCi" firstAttribute="top" secondItem="j4t-rI-hMu" secondAttribute="bottom" constant="20" id="Oll-kB-uF4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAE-jE-rsJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -192,11 +192,11 @@
 			children = (
 				F3529A011AEEC47000642EC3 /* AppDelegate.swift */,
 				F3529A031AEEC47000642EC3 /* ViewController.swift */,
+				F3914C691AEEE7C600EA3F5D /* ScannerViewController.swift */,
 				F3529A051AEEC47000642EC3 /* Main.storyboard */,
 				F3529A081AEEC47000642EC3 /* Images.xcassets */,
 				F3529A0A1AEEC47000642EC3 /* LaunchScreen.xib */,
 				F35299FF1AEEC47000642EC3 /* Supporting Files */,
-				F3914C691AEEE7C600EA3F5D /* ScannerViewController.swift */,
 			);
 			path = QRCoderiOSExample;
 			sourceTree = "<group>";

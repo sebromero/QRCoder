@@ -58,7 +58,14 @@ public class QRCodeGenerator {
     
     #if os(iOS)
     private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage {
-        let cgImage = CIContext(options: [kCIContextUseSoftwareRenderer : true]).createCGImage(image, fromRect: image.extent())
+    
+        #if (arch(i386) || arch(x86_64))
+        let contextOptions = [kCIContextUseSoftwareRenderer : false]
+        #else
+        let contextOptions = [kCIContextUseSoftwareRenderer : true]
+        #endif
+    
+        let cgImage = CIContext(options: contextOptions).createCGImage(image, fromRect: image.extent())
         UIGraphicsBeginImageContextWithOptions(size,false,0.0)
         let context = UIGraphicsGetCurrentContext()
         CGContextSetInterpolationQuality(context, kCGInterpolationNone)
@@ -71,10 +78,10 @@ public class QRCodeGenerator {
     #elseif os(OSX)
     private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage {
         let cgImage = CIContext().createCGImage(image, fromRect: image.extent())
-        let newImage = NSImage(size: size)
+        let newImage = QRImage(size: size)
         newImage.lockFocus()
         let contextPointer = NSGraphicsContext.currentContext()!.graphicsPort
-        var context:CGContextRef!
+        let context:CGContextRef
         
         //OSX >= 10.10 supports CGContext property
         if NSGraphicsContext.currentContext()!.respondsToSelector(Selector("CGContext")) {
