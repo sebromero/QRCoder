@@ -10,7 +10,6 @@ import AVFoundation
 
 public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
 {
-    var orientationObserver:AnyObject?
     var captureSession: AVCaptureSession = AVCaptureSession()
     var captureDevice:AVCaptureDevice? = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
     var deviceInput:AVCaptureDeviceInput?
@@ -64,42 +63,43 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
         view.layer.addSublayer(videoPreviewLayer)
         view.bringSubviewToFront(highlightView)
-        
-        NSNotificationCenter.defaultCenter().addObserverForName(UIDeviceOrientationDidChangeNotification, object: nil, queue: nil) { (notification) -> Void in
-            if let device: UIDevice = notification.object as? UIDevice {
-                self.updateVideoOrientation(device.orientation)
-            }
-        }
     }
     
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         startQRScanningSession()
-        updateVideoOrientation(UIDevice.currentDevice().orientation)
+        updateVideoOrientation(UIApplication.sharedApplication().statusBarOrientation)
     }
     
     override public func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
-        if orientationObserver != nil {
-            NSNotificationCenter.defaultCenter().removeObserver(orientationObserver!)
-        }
         captureSession.stopRunning()
     }
     
-    private func updateVideoOrientation(orientation:UIDeviceOrientation){
+    public override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+        coordinator.animateAlongsideTransition({ (context) -> Void in
+            let orientation = UIApplication.sharedApplication().statusBarOrientation
+            self.updateVideoOrientation(orientation)
+        }, completion: nil)
+        
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+    }
+    
+    private func updateVideoOrientation(orientation:UIInterfaceOrientation){
 
         switch orientation {
-        case UIDeviceOrientation.Portrait :
+        case .Portrait :
             videoPreviewLayer.connection?.videoOrientation = .Portrait
             break
-        case UIDeviceOrientation.PortraitUpsideDown :
+        case .PortraitUpsideDown :
             videoPreviewLayer.connection?.videoOrientation = .PortraitUpsideDown
             break
-        case UIDeviceOrientation.LandscapeLeft :
-            videoPreviewLayer.connection?.videoOrientation = .LandscapeRight
-            break
-        case UIDeviceOrientation.LandscapeRight :
+        case .LandscapeLeft :
             videoPreviewLayer.connection?.videoOrientation = .LandscapeLeft
+            break
+        case .LandscapeRight :
+            videoPreviewLayer.connection?.videoOrientation = .LandscapeRight
             break
         default:
             videoPreviewLayer.connection?.videoOrientation = .Portrait
@@ -108,17 +108,20 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     
     //MARK: QR Code Processing
     
-    public func processQRCodeContent(qrCodeContent:String) {
-        //Override in subclasses
+    /**
+    * Processes the string content fo the QR code. This method should be overridden
+    * in subclasses.
+    * @param qrCodeContent The content of the QR code as string.
+    * @return A booloean indicating whether the QR code could be processed.
+    **/
+     public func processQRCodeContent(qrCodeContent:String) -> Bool {
         println(qrCodeContent)
+        return false
     }
     
-    private func startQRScanningSession(delayInSeconds:Double = 0.0){
+    private func startQRScanningSession(){
         highlightView.frame = CGRectZero
-        let popTime = dispatch_time(DISPATCH_TIME_NOW, (Int64(delayInSeconds * Double(NSEC_PER_SEC))))
-        dispatch_after(popTime, dispatch_get_main_queue()){
-            self.captureSession.startRunning()
-        }
+        self.captureSession.startRunning()
     }
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
@@ -145,7 +148,15 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
                 
                 if let qrCodeContent = detectionString {
                     captureSession.stopRunning()
-                    processQRCodeContent(qrCodeContent)
+                    UIView.animateWithDuration(0.5, animations: { () -> Void in
+                        self.highlightView.alpha = 0
+                    }, completion: { (complete) -> Void in
+                        if !self.processQRCodeContent(qrCodeContent) {
+                            self.highlightView.frame = CGRectZero
+                            self.highlightView.alpha = 1
+                            self.captureSession.startRunning()
+                        }
+                    })
                     return
                 }
             }
