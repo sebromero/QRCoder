@@ -6,16 +6,15 @@
 [![Platform](https://img.shields.io/cocoapods/p/QRCoder.svg?style=flat)](http://cocoapods.org/pods/QRCoder)
 
 Since OSX 10.9 / iOS 7 apple offers a CI filter to generate QR codes.
-However, scaling the QR code to the desired size without blurring the image doesn't work out of the box. The QRCoder library can help you with that. It also contains a handy view controller to scan QR codes.
+However, scaling the QR code to the desired size without blurring the image doesn't work out of the box. The QRCoder library can help you with that. It also contains a handy view controller to scan QR codes (iOS only).
 
-## Usage
+## Usage: Generator
 
-Simply QRCodeGenerator to create an image of type QRImage. This is a type alias for UIImage under iOS and NSImage under OS X.
+Simply use an instance of QRCodeGenerator to create an image of type QRImage. This is a type alias for UIImage under iOS and NSImage under OS X.
 
 <img src="https://raw.githubusercontent.com/sbhklr/QRCoder/master/screenshots/ios_code.png" width="250" />
 ```swift
 let generator = QRCodeGenerator()
-//You can set the correction level to one of [L,M,Q,H]
 //Default correction level is M
 generator.correctionLevel = .H
 let image:QRImage = generator.createImage("Hello world!",size: CGSizeMake(200,200))
@@ -25,6 +24,16 @@ let image:QRImage = generator.createImage("Hello world!",size: CGSizeMake(200,20
 let generator = QRCodeGenerator()
 let image:QRImage = generator.createImage("Hello world!",size: CGSizeMake(200,200))
 ```
+
+You can set the correction level to one of the values [L,M,Q,H]. The meaning is as follows:
+
+- Level L – up to 7% damage
+- Level M – up to 15% damage
+- Level Q – up to 25% damage
+- Level H – up to 30% damage
+
+## Usage: Scanner (iOS)
+
 <img src="https://raw.githubusercontent.com/sbhklr/QRCoder/master/screenshots/ios_scanner.png" width="250" />
 ```swift
 class ScannerViewController : QRCodeScannerViewController {
@@ -52,6 +61,17 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "QRCoder"
 ```
+
+## Todo
+
+* Add QR code scanner for OS X
+
+## Contributing
+
+* [Fork it](http://help.github.com/forking/)
+* Create new branch to make your changes
+* Commit all your changes to your branch
+* Submit a [pull request](http://help.github.com/pull-requests/)
 
 ## Author
 
