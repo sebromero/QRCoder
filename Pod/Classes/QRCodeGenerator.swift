@@ -19,13 +19,11 @@ public typealias QRImage = NSImage
 #endif
 
 @objc
-public class QRCodeGenerator {
+public class QRCodeGenerator : NSObject {
     
     public var backgroundColor:QRColor = QRColor.whiteColor()
     public var foregroundColor:QRColor = QRColor.blackColor()
     public var correctionLevel:CorrectionLevel = .M
-    
-    public init(){}
     
     public enum CorrectionLevel : String {
         case L = "L"
