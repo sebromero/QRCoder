@@ -44,6 +44,17 @@ class ScannerViewController : QRCodeScannerViewController {
         return true
     }
 
+    override func didFailWithError(error: NSError) {
+        let alert = UIAlertController(title: error.localizedDescription,
+            message: error.localizedFailureReason, preferredStyle: .Alert)
+        let okAction = UIAlertAction(title: "OK", style: .Default, handler: {
+            _ in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        })
+        alert.addAction(okAction)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+
 }
 ```
 
