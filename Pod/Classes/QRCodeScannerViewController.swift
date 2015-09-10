@@ -50,7 +50,9 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         if let captureInput = deviceInput {
             captureSession.addInput(captureInput)
         } else {
-            println("Error: \(error?.description)")
+            if let knownError = error {
+                didFailWithError(knownError)
+            }
             return
         }
         
@@ -117,6 +119,16 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
      public func processQRCodeContent(qrCodeContent:String) -> Bool {
         println(qrCodeContent)
         return false
+    }
+    
+    /**
+    * Catch error when the controller is loading. This method can be overriden
+    * in subclasses to detect error. Do not dismiss controller immediately.
+    * @param error The error object
+    * @return no return value
+    **/
+    public func didFailWithError(error: NSError) {
+        println("Error: \(error.description)")
     }
     
     private func startQRScanningSession(){
