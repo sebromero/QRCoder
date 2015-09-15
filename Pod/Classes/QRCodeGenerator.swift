@@ -18,6 +18,7 @@ public typealias QRColor = NSColor
 public typealias QRImage = NSImage
 #endif
 
+@available(OSX 10.10, *)
 @objc
 public class QRCodeGenerator : NSObject {
     
@@ -33,24 +34,28 @@ public class QRCodeGenerator : NSObject {
     }
     
     private func imageWithImageFilter(inputImage:CIImage) -> CIImage {
-        let colorFilter = CIFilter(name: "CIFalseColor")
-        colorFilter.setDefaults()
-        colorFilter.setValue(inputImage, forKey: "inputImage")
-        colorFilter.setValue(CIColor(CGColor: foregroundColor.CGColor), forKey: "inputColor0")
-        colorFilter.setValue(CIColor(CGColor: backgroundColor.CGColor), forKey: "inputColor1")
-        return colorFilter.outputImage
+        if let colorFilter = CIFilter(name: "CIFalseColor") {
+            colorFilter.setDefaults()
+            colorFilter.setValue(inputImage, forKey: "inputImage")
+            colorFilter.setValue(CIColor(CGColor: foregroundColor.CGColor), forKey: "inputColor0")
+            colorFilter.setValue(CIColor(CGColor: backgroundColor.CGColor), forKey: "inputColor1")
+            return colorFilter.outputImage!
+        }
+        return CIImage()
     }
     
     public func createImage(value:String, size:CGSize) -> QRImage {
         let stringData = value.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: true)
-        let qrFilter = CIFilter(name: "CIQRCodeGenerator")
-        qrFilter.setDefaults()
-        qrFilter.setValue(stringData, forKey: "inputMessage")
-        qrFilter.setValue(correctionLevel.rawValue, forKey: "inputCorrectionLevel")
-        
-        let outputImage = imageWithImageFilter(qrFilter.outputImage)
-        let image = createNonInterpolatedImageFromCIImage(outputImage, size: size)
-        return image
+        if let qrFilter = CIFilter(name: "CIQRCodeGenerator") {
+            qrFilter.setDefaults()
+            qrFilter.setValue(stringData, forKey: "inputMessage")
+            qrFilter.setValue(correctionLevel.rawValue, forKey: "inputCorrectionLevel")
+            
+            let outputImage = imageWithImageFilter(qrFilter.outputImage!)
+            let image = createNonInterpolatedImageFromCIImage(outputImage, size: size)
+            return image
+        }
+        return QRImage()
     }
     
     
@@ -75,7 +80,7 @@ public class QRCodeGenerator : NSObject {
     
     #elseif os(OSX)
     private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage {
-        let cgImage = CIContext().createCGImage(image, fromRect: image.extent())
+        let cgImage = CIContext().createCGImage(image, fromRect: image.extent)
         let newImage = QRImage(size: size)
         newImage.lockFocus()
         let contextPointer = NSGraphicsContext.currentContext()!.graphicsPort
@@ -88,7 +93,7 @@ public class QRCodeGenerator : NSObject {
             context = unsafeBitCast(contextPointer, CGContext.self)
         }
         
-        CGContextSetInterpolationQuality(context, kCGInterpolationNone)
+        CGContextSetInterpolationQuality(context, CGInterpolationQuality.None)
         CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage)
         newImage.unlockFocus()
         return newImage
