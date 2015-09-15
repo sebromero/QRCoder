@@ -68,10 +68,10 @@ public class QRCodeGenerator : NSObject {
         let contextOptions = [kCIContextUseSoftwareRenderer : true]
         #endif
     
-        let cgImage = CIContext(options: contextOptions).createCGImage(image, fromRect: image.extent())
+        let cgImage = CIContext(options: contextOptions).createCGImage(image, fromRect: image.extent)
         UIGraphicsBeginImageContextWithOptions(size,false,0.0)
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetInterpolationQuality(context, kCGInterpolationNone)
+        CGContextSetInterpolationQuality(context, CGInterpolationQuality.None)
         CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

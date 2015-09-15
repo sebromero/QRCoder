@@ -12,7 +12,7 @@ import QRCoder
 class ScannerViewController : QRCodeScannerViewController {
     
     override func processQRCodeContent(qrCodeContent: String) -> Bool {
-        println(qrCodeContent)
+        print(qrCodeContent)
         dismissViewControllerAnimated(true, completion: nil)
         return true
     }

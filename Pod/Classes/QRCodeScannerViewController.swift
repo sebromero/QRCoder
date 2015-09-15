@@ -19,10 +19,10 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     
     //MARK: Lifecycle
     
-    required public init(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        highlightView.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleLeftMargin | UIViewAutoresizing.FlexibleRightMargin | UIViewAutoresizing.FlexibleBottomMargin
+        highlightView.autoresizingMask = [.FlexibleTopMargin, .FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleBottomMargin]
         highlightView.layer.borderColor = UIColor.greenColor().CGColor
         highlightView.layer.borderWidth = 3
 
@@ -31,7 +31,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
             captureSession.sessionPreset = preset
         }
         
-        videoPreviewLayer = AVCaptureVideoPreviewLayer.layerWithSession(captureSession) as! AVCaptureVideoPreviewLayer
+        videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
     }
     
     override public func viewDidLayoutSubviews() {
@@ -43,15 +43,15 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         super.viewDidLoad()
         view.addSubview(highlightView)
         
-        var error:NSError?
-        
-        deviceInput = AVCaptureDeviceInput.deviceInputWithDevice(captureDevice, error: &error) as? AVCaptureDeviceInput
+        do {
+            deviceInput = try AVCaptureDeviceInput(device: captureDevice)
+        } catch let error as NSError {
+             didFailWithError(error)
+            return
+        }
         
         if let captureInput = deviceInput {
             captureSession.addInput(captureInput)
-        } else if let captureError = error {
-            didFailWithError(captureError)
-            return
         }
         
         metadataOutput.setMetadataObjectsDelegate(self, queue:dispatch_get_main_queue())
@@ -115,7 +115,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     * @return A booloean indicating whether the QR code could be processed.
     **/
      public func processQRCodeContent(qrCodeContent:String) -> Bool {
-        println(qrCodeContent)
+        print(qrCodeContent)
         return false
     }
     
@@ -125,7 +125,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     * @param error The error object
     **/
     public func didFailWithError(error: NSError) {
-        println("Error: \(error.description)")
+        print("Error: \(error.description)")
     }
     
     private func startQRScanningSession(){
