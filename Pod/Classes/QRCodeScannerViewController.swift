@@ -128,7 +128,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         print("Error: \(error.description)")
     }
     
-    private func startQRScanningSession(){
+    public func startQRScanningSession(){
         highlightView.frame = CGRectZero
         self.captureSession.startRunning()
     }
