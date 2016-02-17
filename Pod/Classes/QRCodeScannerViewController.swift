@@ -67,8 +67,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     
     override public func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        startQRScanningSession()
-        updateVideoOrientation(UIApplication.sharedApplication().statusBarOrientation)
+        startQRCodeScanningSession()
     }
     
     override public func viewWillDisappear(animated: Bool) {
@@ -128,7 +127,11 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         print("Error: \(error.description)")
     }
     
-    private func startQRScanningSession(){
+    /**
+     * Starts the scanning session using the built in camera.
+     **/
+    public func startQRCodeScanningSession(){
+        updateVideoOrientation(UIApplication.sharedApplication().statusBarOrientation)
         highlightView.frame = CGRectZero
         self.captureSession.startRunning()
     }
