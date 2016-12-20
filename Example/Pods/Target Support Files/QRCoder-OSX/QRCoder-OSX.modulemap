@@ -1,5 +1,5 @@
 framework module QRCoder {
-  umbrella header "Pods-QRCoderiOSExample-QRCoder-umbrella.h"
+  umbrella header "QRCoder-OSX-umbrella.h"
 
   export *
   module * { export * }

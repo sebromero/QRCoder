@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_QRCoderiOSTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_QRCoderiOSTestsVersionString[];
+FOUNDATION_EXPORT double QRCoderVersionNumber;
+FOUNDATION_EXPORT const unsigned char QRCoderVersionString[];
 

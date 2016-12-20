@@ -7,899 +7,773 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E1FABE8E17C542DC1A651D1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFE929B0888B1584B9A151 /* Cocoa.framework */; };
-		133857AC8DAB6430A613CCA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF6211FC8F5B8E2FC3E6C09 /* Foundation.framework */; };
-		14B33654FE25420D16EEC623 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942FD52130E50500C8D80E6 /* Foundation.framework */; };
-		168264A73AECA74EC46002DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4995752FD5796D840A2D5 /* QuartzCore.framework */; };
-		182B39EC34FD2984849E4AE1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFE929B0888B1584B9A151 /* Cocoa.framework */; };
-		21173DF47C1B48FCF2CBE903 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756B5FA405CAF586AC4DFF7 /* QRCodeGenerator.swift */; };
-		2C4CED8C0AA13921B3BDFFC8 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30476B03295C4796C11017 /* QRCodeScannerViewController.swift */; };
-		2E0CA29BEBD6EFB044C8D0A2 /* Pods-QRCoderOSXTests-QRCoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB71B85BC089F7D6E89E4FC /* Pods-QRCoderOSXTests-QRCoder-dummy.m */; };
-		3025E8DDC42D58F6198002C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942FD52130E50500C8D80E6 /* Foundation.framework */; };
-		4275DD99CA52CB8F5A386998 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FA22E6D8C22D302EED9688 /* AppKit.framework */; };
-		446FEF3904BD1363E858C5A5 /* Pods-QRCoderOSXExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88BF7EFA178EC40F794D7F3D /* Pods-QRCoderOSXExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47D8BEE14BDDAE5D8E2F15DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9CECF2FF935A4A636C7A35 /* UIKit.framework */; };
-		4D2D8190840E24993C3EACB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942FD52130E50500C8D80E6 /* Foundation.framework */; };
-		5298FD4B97F6BF870A79554C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8103BFC62CF61B80F40F7086 /* QuartzCore.framework */; };
-		561372F8ACF96D70464C4911 /* Pods-QRCoderiOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C351C029B2D3C5B8781153 /* Pods-QRCoderiOSTests-dummy.m */; };
-		5A5BACB557EA6AA74C3F9691 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFE929B0888B1584B9A151 /* Cocoa.framework */; };
-		5CAE88C2F3835418C40D2761 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C30476B03295C4796C11017 /* QRCodeScannerViewController.swift */; };
-		623AF7E48187A614865D2228 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8FA22E6D8C22D302EED9688 /* AppKit.framework */; };
-		64F4C3B3A6B15649970E73BD /* Pods-QRCoderiOSExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B919E4C8D43FD7D367B0DE69 /* Pods-QRCoderiOSExample-dummy.m */; };
-		79FF3EF29FBA9D1FDE2F15DC /* Pods-QRCoderOSXTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B72F3609982B3297B6C9889A /* Pods-QRCoderOSXTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89AADA9A7C6641EF0AACEE4D /* Pods-QRCoderOSXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 448E3D03B62F5A3BC73DA320 /* Pods-QRCoderOSXTests-dummy.m */; };
-		9A8B740FCCFBC8FA98DB8A4B /* Pods-QRCoderiOSTests-QRCoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2A25AA439E0AE95BCFB0 /* Pods-QRCoderiOSTests-QRCoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BBAA211CBEC306FE5D4B64D /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756B5FA405CAF586AC4DFF7 /* QRCodeGenerator.swift */; };
-		A22B530A3963D2985EC36DBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9CECF2FF935A4A636C7A35 /* UIKit.framework */; };
-		A398ED608B549F4A4CC1F6B5 /* Pods-QRCoderiOSExample-QRCoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B243C0CD15A7CB4D794204 /* Pods-QRCoderiOSExample-QRCoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A70168D551D1CE335CAAE8F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0942FD52130E50500C8D80E6 /* Foundation.framework */; };
-		AA9AD2741ED72B5795484E9C /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756B5FA405CAF586AC4DFF7 /* QRCodeGenerator.swift */; };
-		ACE8381024B5DB3EBD47186F /* Pods-QRCoderiOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F408154EF850EE8F2BA83A /* Pods-QRCoderiOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE43E0D5ECC792A168156B29 /* Pods-QRCoderiOSExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5738C72DDD0C44E55F3B0F1 /* Pods-QRCoderiOSExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB46C696EE91CB0DC36D1704 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F756B5FA405CAF586AC4DFF7 /* QRCodeGenerator.swift */; };
-		BD69F1415D80E80BBAB9EA76 /* Pods-QRCoderiOSExample-QRCoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A76D4BE1191733BA7C33F9 /* Pods-QRCoderiOSExample-QRCoder-dummy.m */; };
-		D0913832B86DB32AABB56BA3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D4995752FD5796D840A2D5 /* QuartzCore.framework */; };
-		D99ACC1443882FB55C975611 /* Pods-QRCoderOSXExample-QRCoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1676A99BF25419B105059CE2 /* Pods-QRCoderOSXExample-QRCoder-dummy.m */; };
-		DAF2CAFA047581D0A34966AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF6211FC8F5B8E2FC3E6C09 /* Foundation.framework */; };
-		E0CE80007B53F5B822A3A6E2 /* Pods-QRCoderOSXExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA4E735A9F7357E07ABADF3 /* Pods-QRCoderOSXExample-dummy.m */; };
-		E0FB877BC68C9FC071F58A2E /* Pods-QRCoderOSXExample-QRCoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 380660145807569B4DA116A9 /* Pods-QRCoderOSXExample-QRCoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E54C298573F625CAA905BA8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8103BFC62CF61B80F40F7086 /* QuartzCore.framework */; };
-		EF701C0B5AABDB1D5EB9BAAE /* Pods-QRCoderiOSTests-QRCoder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 169DB984F22C91A693F87A7F /* Pods-QRCoderiOSTests-QRCoder-dummy.m */; };
-		F4D2161F9224C14398862B9B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFFE929B0888B1584B9A151 /* Cocoa.framework */; };
-		F50F4540BCC8B747E62B5051 /* Pods-QRCoderOSXTests-QRCoder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4AB93050EACF45854689F07 /* Pods-QRCoderOSXTests-QRCoder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FD590FA6089BDBD4DC18423EED8978B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83887DBE3C8E330818816F5E468BA4DF /* Foundation.framework */; };
+		17E8311C4946A71A8A3B0BC90429510E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F1AD390507BD572EA550CFCA525DD7 /* AppKit.framework */; };
+		2093F47300E54A276AD6FB205D807B91 /* Pods-QRCoderOSXExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57861C9DA749C9D6D94CE657936CF0CC /* Pods-QRCoderOSXExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		325B416E8842C2965FEF4621C77833B1 /* Pods-QRCoderOSXTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A241DA297404E8CBC7D50C7B8C67DCC /* Pods-QRCoderOSXTests-dummy.m */; };
+		33C2FDA33AECC9F281AAF7D8AC6C4141 /* Pods-QRCoderiOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8E0DC123AE5AD7BD148A8106719A27 /* Pods-QRCoderiOSTests-dummy.m */; };
+		494F4AA3334B17D1FD5577DA3F3641E8 /* QRCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9A7F59B413D59834E9EF8F5A9262F4 /* QRCodeScannerViewController.swift */; };
+		4B0851F4C5F437125C4604E530C751C3 /* QRCoder-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85042A907BD687C5A8D585FB749862FC /* QRCoder-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5289612DD70031E91968406D4B4C15EF /* Pods-QRCoderiOSExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8CE18434CBF45E9A9EE677A93D9D45 /* Pods-QRCoderiOSExample-dummy.m */; };
+		55A0EAA7FDBCBB211ADCB7BACA3D449F /* Pods-QRCoderiOSExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70DBCEB88011F28DFE8F55079F4AED0A /* Pods-QRCoderiOSExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58FE3705CD191639E047AF20F884C858 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADE92EA42C0F82C177ED3145770C97F /* QuartzCore.framework */; };
+		59BE80EEC746DDA7B2F1BA73C21750BB /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C3FC12247D93C9DD0F84A620EAF81 /* QRCodeGenerator.swift */; };
+		6DE00B873D740C2D91AED8BEAF62A611 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C3FC12247D93C9DD0F84A620EAF81 /* QRCodeGenerator.swift */; };
+		794F581082A80BAA02A111F9E1912CD9 /* QRCoder-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1CF0D32022979671B6E2BEF33F9C2B /* QRCoder-OSX-dummy.m */; };
+		7EBA1EBA1FF808FF68B6B96E2B89F02F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47302E5663DB66710F024BEDB62AFB3E /* QuartzCore.framework */; };
+		86A6FDAAF7141F4FBFA06668ED6B207B /* QRCoder-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A527A3BFAA75955CB83ABB9670135A /* QRCoder-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917A63A0D41EA442C2DA6CB90CC73B88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D591C9817EAC99028494A1CCE1502D24 /* Foundation.framework */; };
+		B7E165D8CFAFDAA0A2D8B94FED3D2146 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C41303BB4B26BAD253F4EAF1A03E8D /* Cocoa.framework */; };
+		BD9F773DFF2CC20309B3778ADF16EC84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83887DBE3C8E330818816F5E468BA4DF /* Foundation.framework */; };
+		C0058A6C982AB8674168A81BEE914092 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEE8472EE99524C4239EB8748C2119D /* UIKit.framework */; };
+		C9D0AA778C68A3C4B715010CAD4C80E3 /* QRCoder-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FF314F39BD40B0B9A91EF584299F70 /* QRCoder-iOS-dummy.m */; };
+		E2C040A87385F09F3E6299D998A457D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C41303BB4B26BAD253F4EAF1A03E8D /* Cocoa.framework */; };
+		E508653F3F3BC22E3CE9CAF5C5AE72E0 /* Pods-QRCoderOSXExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA899D854021BAC4CF2D68B13241872 /* Pods-QRCoderOSXExample-dummy.m */; };
+		E6718323204F8E1AFBECFF26C2A10E59 /* Pods-QRCoderiOSTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63A0BA1FEC46B2D328748332AC7337C6 /* Pods-QRCoderiOSTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F105C316BBF099A453859D79202204D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C41303BB4B26BAD253F4EAF1A03E8D /* Cocoa.framework */; };
+		F86178B4D4FED4E9E8A1D72ED3F0EF5E /* Pods-QRCoderOSXTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A09E17C92F2766955210906101516396 /* Pods-QRCoderOSXTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB592BF90B1927EE8E39897972A0334A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83887DBE3C8E330818816F5E468BA4DF /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4CE7F2F27F7125E8B6475E90 /* PBXContainerItemProxy */ = {
+		482EA595A1080AA2770D470716487005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9D1F4068604835EE855BDD3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 22A3984A2D7E7DB9F7E12A14;
-			remoteInfo = "Pods-QRCoderiOSExample-QRCoder";
+			remoteGlobalIDString = DB856300AF8F86E98F9E2E0C6245A6F6;
+			remoteInfo = "QRCoder-OSX";
 		};
-		907A522877C9E54142CBB0CA /* PBXContainerItemProxy */ = {
+		8689E9F5B0076967C93D3EF05A6D06FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9D1F4068604835EE855BDD3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 70796148093104CA2F0D9BDC;
-			remoteInfo = "Pods-QRCoderOSXExample-QRCoder";
+			remoteGlobalIDString = 162714759D9BB9293EE069EA16FA2E82;
+			remoteInfo = "QRCoder-iOS";
 		};
-		BD95D459DD011893CC1CC2D9 /* PBXContainerItemProxy */ = {
+		D76B3C0D165D0ADF73820863D7EB6933 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9D1F4068604835EE855BDD3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62920D263D260B4AD67F8E11;
-			remoteInfo = "Pods-QRCoderiOSTests-QRCoder";
+			remoteGlobalIDString = DB856300AF8F86E98F9E2E0C6245A6F6;
+			remoteInfo = "QRCoder-OSX";
 		};
-		D5E11499149A6322F81BF4BD /* PBXContainerItemProxy */ = {
+		DF80FAA6FD6758C6CF365D5521F933A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9D1F4068604835EE855BDD3 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E2B521231C56617636481BCF;
-			remoteInfo = "Pods-QRCoderOSXTests-QRCoder";
+			remoteGlobalIDString = 162714759D9BB9293EE069EA16FA2E82;
+			remoteInfo = "QRCoder-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		067327C8DB09794051D13575 /* Pods-QRCoderiOSExample-QRCoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QRCoderiOSExample-QRCoder-prefix.pch"; path = "../Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder-prefix.pch"; sourceTree = "<group>"; };
-		0716789CBB9F14C4827B3D0B /* Pods-QRCoderOSXExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXExample-frameworks.sh"; sourceTree = "<group>"; };
-		0942FD52130E50500C8D80E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0AFFE929B0888B1584B9A151 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		0B9CECF2FF935A4A636C7A35 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0BCDE6F9B9ACC8190E880FF2 /* Pods-QRCoderOSXExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderOSXExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		13B243C0CD15A7CB4D794204 /* Pods-QRCoderiOSExample-QRCoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QRCoderiOSExample-QRCoder-umbrella.h"; path = "../Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder-umbrella.h"; sourceTree = "<group>"; };
-		13C454FCA4C7584694B33177 /* Pods-QRCoderOSXExample-QRCoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXExample-QRCoder-prefix.pch"; sourceTree = "<group>"; };
-		1676A99BF25419B105059CE2 /* Pods-QRCoderOSXExample-QRCoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderOSXExample-QRCoder-dummy.m"; sourceTree = "<group>"; };
-		169DB984F22C91A693F87A7F /* Pods-QRCoderiOSTests-QRCoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-QRCoderiOSTests-QRCoder-dummy.m"; path = "../Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder-dummy.m"; sourceTree = "<group>"; };
-		1C30476B03295C4796C11017 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
-		1FB6BE589F197E5ECED640AE /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1FE96E89DD28354A7E84BB8D /* Pods-QRCoderOSXExample-QRCoder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXExample-QRCoder-Private.xcconfig"; sourceTree = "<group>"; };
-		209EBBFB74CCE59962D8A74F /* Pods-QRCoderiOSExample-QRCoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderiOSExample-QRCoder.xcconfig"; path = "../Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder.xcconfig"; sourceTree = "<group>"; };
-		2431614F14462F54131CF0D4 /* Pods-QRCoderOSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXTests.release.xcconfig"; sourceTree = "<group>"; };
-		25E8237072BE497ECEBCE211 /* Pods-QRCoderiOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSTests-resources.sh"; sourceTree = "<group>"; };
-		27A76D4BE1191733BA7C33F9 /* Pods-QRCoderiOSExample-QRCoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-QRCoderiOSExample-QRCoder-dummy.m"; path = "../Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder-dummy.m"; sourceTree = "<group>"; };
-		328C02A227838955951DE98F /* Pods-QRCoderOSXExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QRCoderOSXExample.modulemap"; sourceTree = "<group>"; };
-		32F110B4FB850F19D161FD80 /* Pods_QRCoderOSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCoderOSXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		33DBF5B8CDA932CEAED9D77D /* Pods-QRCoderiOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		36D4995752FD5796D840A2D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		380660145807569B4DA116A9 /* Pods-QRCoderOSXExample-QRCoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXExample-QRCoder-umbrella.h"; sourceTree = "<group>"; };
-		3E6E2840DACFDB873077A1CE /* Pods-QRCoderOSXExample-QRCoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QRCoderOSXExample-QRCoder.modulemap"; sourceTree = "<group>"; };
-		448E3D03B62F5A3BC73DA320 /* Pods-QRCoderOSXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderOSXTests-dummy.m"; sourceTree = "<group>"; };
-		468EA6D8BE4FEDA2C851672D /* Pods-QRCoderiOSExample-QRCoder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderiOSExample-QRCoder-Private.xcconfig"; path = "../Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder-Private.xcconfig"; sourceTree = "<group>"; };
-		470584F326DC850FEC18DEF0 /* Pods-QRCoderOSXExample-QRCoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXExample-QRCoder.xcconfig"; sourceTree = "<group>"; };
-		4BF6211FC8F5B8E2FC3E6C09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		51101F21C4BE16AEF3F66442 /* Pods-QRCoderOSXTests-QRCoder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderOSXTests-QRCoder-Private.xcconfig"; path = "../Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder-Private.xcconfig"; sourceTree = "<group>"; };
-		5275A2B7E2ACB9A30387E8CA /* Pods-QRCoderiOSExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderiOSExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5A6150EE4BD523B7671FB193 /* Pods-QRCoderiOSExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSExample-resources.sh"; sourceTree = "<group>"; };
-		5B7C2A25AA439E0AE95BCFB0 /* Pods-QRCoderiOSTests-QRCoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QRCoderiOSTests-QRCoder-umbrella.h"; path = "../Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder-umbrella.h"; sourceTree = "<group>"; };
-		5C36E7F08C1DD0C2B7C691C0 /* Pods-QRCoderiOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSExample.debug.xcconfig"; sourceTree = "<group>"; };
-		5D1C4DEAF1471A787674BDC1 /* Pods-QRCoderOSXExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXExample.release.xcconfig"; sourceTree = "<group>"; };
-		60B601500A823EAB1D4E1653 /* Pods-QRCoderOSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6103931D0B33800F1C728649 /* Pods-QRCoderiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		63943E75919B01AEFD0B8C92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-QRCoderiOSTests-QRCoder/Info.plist"; sourceTree = "<group>"; };
-		6505DD888F122E2C05EF5B4A /* Pods-QRCoderiOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderiOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		67B688E22A6EEEA34027755A /* QRCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C7B2C596163BB4089BC3216 /* Pods_QRCoderiOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCoderiOSExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CA4E735A9F7357E07ABADF3 /* Pods-QRCoderOSXExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderOSXExample-dummy.m"; sourceTree = "<group>"; };
-		6DB71B85BC089F7D6E89E4FC /* Pods-QRCoderOSXTests-QRCoder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-QRCoderOSXTests-QRCoder-dummy.m"; path = "../Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder-dummy.m"; sourceTree = "<group>"; };
-		7ACEFCC4EC878AB9468AB45B /* Pods-QRCoderOSXTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXTests-resources.sh"; sourceTree = "<group>"; };
-		8103BFC62CF61B80F40F7086 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		8353018ADE80D3927B1C37AB /* Pods-QRCoderiOSTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderiOSTests-environment.h"; sourceTree = "<group>"; };
-		856DB5A749B8EB4D002E8A6A /* Pods-QRCoderiOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QRCoderiOSTests.modulemap"; sourceTree = "<group>"; };
-		85EE99D3908B82DD26214ACB /* Pods-QRCoderOSXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderOSXTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		88BF7EFA178EC40F794D7F3D /* Pods-QRCoderOSXExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXExample-umbrella.h"; sourceTree = "<group>"; };
-		8C85E22CD3FE2C9C7FF4E38C /* Pods-QRCoderiOSTests-QRCoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-QRCoderiOSTests-QRCoder.modulemap"; path = "../Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder.modulemap"; sourceTree = "<group>"; };
-		8D660DD3FB124789019047E0 /* Pods-QRCoderOSXTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXTests-environment.h"; sourceTree = "<group>"; };
-		8E97FA368BAFFF8D02D62332 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-QRCoderiOSExample-QRCoder/Info.plist"; sourceTree = "<group>"; };
-		8F04F9DF11E6E8212766971F /* Pods-QRCoderiOSTests-QRCoder-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderiOSTests-QRCoder-Private.xcconfig"; path = "../Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder-Private.xcconfig"; sourceTree = "<group>"; };
-		8F8EBF2A91AA43F346FECE26 /* Pods-QRCoderiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		96B326B65A8FC72B1D10825C /* Pods-QRCoderiOSExample-QRCoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-QRCoderiOSExample-QRCoder.modulemap"; path = "../Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder.modulemap"; sourceTree = "<group>"; };
-		999075CAA72ABEACDFFD9C52 /* Pods-QRCoderiOSExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSExample-frameworks.sh"; sourceTree = "<group>"; };
-		9AF9823CBD13B4BABF51507A /* Pods-QRCoderOSXExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderOSXExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		A7450D06190A6F8172E4D868 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A75159EEF8904192F08070B9 /* Pods-QRCoderiOSExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderiOSExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		A8F408154EF850EE8F2BA83A /* Pods-QRCoderiOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderiOSTests-umbrella.h"; sourceTree = "<group>"; };
-		AA0529320891429609C9EBC1 /* Pods-QRCoderiOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSExample.release.xcconfig"; sourceTree = "<group>"; };
-		B5738C72DDD0C44E55F3B0F1 /* Pods-QRCoderiOSExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderiOSExample-umbrella.h"; sourceTree = "<group>"; };
-		B72F3609982B3297B6C9889A /* Pods-QRCoderOSXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXTests-umbrella.h"; sourceTree = "<group>"; };
-		B82A8A8F933F417431F4526A /* Pods-QRCoderOSXTests-QRCoder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-QRCoderOSXTests-QRCoder.modulemap"; path = "../Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder.modulemap"; sourceTree = "<group>"; };
-		B919E4C8D43FD7D367B0DE69 /* Pods-QRCoderiOSExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderiOSExample-dummy.m"; sourceTree = "<group>"; };
-		BB1D60B93F7E29288EF62617 /* Pods-QRCoderOSXExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXExample.debug.xcconfig"; sourceTree = "<group>"; };
-		BEF9B264544BC5EF5E871C5E /* Pods-QRCoderOSXExample-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXExample-environment.h"; sourceTree = "<group>"; };
-		C4AB93050EACF45854689F07 /* Pods-QRCoderOSXTests-QRCoder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QRCoderOSXTests-QRCoder-umbrella.h"; path = "../Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder-umbrella.h"; sourceTree = "<group>"; };
-		C8FA22E6D8C22D302EED9688 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
-		C905E4A65BDF79D1DDBEDAD0 /* QRCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C96CE895DBD5B6C969D1E665 /* Pods-QRCoderOSXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QRCoderOSXTests.modulemap"; sourceTree = "<group>"; };
-		CB8A0C865E8C29E6A570A5FB /* Pods_QRCoderOSXExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCoderOSXExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D388A08DDD281DE82E2FD5BC /* Pods-QRCoderiOSTests-QRCoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QRCoderiOSTests-QRCoder-prefix.pch"; path = "../Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder-prefix.pch"; sourceTree = "<group>"; };
-		D5B69849F38121DC92AC2ADC /* Pods-QRCoderiOSTests-QRCoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderiOSTests-QRCoder.xcconfig"; path = "../Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder.xcconfig"; sourceTree = "<group>"; };
-		D6E28ED47F404F669CFC5F03 /* Pods-QRCoderOSXExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXExample-resources.sh"; sourceTree = "<group>"; };
-		D796007B5DF81C5D0313D15A /* Pods-QRCoderiOSExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QRCoderiOSExample.modulemap"; sourceTree = "<group>"; };
-		D89C850AD52D3B5D26E6B1AF /* QRCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFCC635509C72AC6C71F920D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E0EEA88927C412E989676A21 /* Pods-QRCoderOSXTests-QRCoder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-QRCoderOSXTests-QRCoder-prefix.pch"; path = "../Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder-prefix.pch"; sourceTree = "<group>"; };
-		E47B88BB19443A68DFB31EB2 /* Pods-QRCoderOSXTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXTests-frameworks.sh"; sourceTree = "<group>"; };
-		E760D3C4E7408777A61F1287 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-QRCoderOSXTests-QRCoder/Info.plist"; sourceTree = "<group>"; };
-		E7D757B24B68CB80CC22C591 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8C351C029B2D3C5B8781153 /* Pods-QRCoderiOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderiOSTests-dummy.m"; sourceTree = "<group>"; };
-		EAABF5A3AE4BE6A9F67F2569 /* Pods-QRCoderiOSExample-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderiOSExample-environment.h"; sourceTree = "<group>"; };
-		EB11C57D03DD40BAEB1869DD /* Pods_QRCoderiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRCoderiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB2E450AFFD80886C60D5BFF /* QRCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01C0233BF7C7F4CC616372A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1A0B0A0545F5D03513387EB /* Pods-QRCoderiOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderiOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F54F70082C0163B27E37BF61 /* Pods-QRCoderOSXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderOSXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F756B5FA405CAF586AC4DFF7 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
-		F7CBBA1F00C1C9AFF0BAFB53 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE986A0D107F6D96A390D6EE /* Pods-QRCoderOSXTests-QRCoder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRCoderOSXTests-QRCoder.xcconfig"; path = "../Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder.xcconfig"; sourceTree = "<group>"; };
+		02749AA66C8DECE9025E60CEC95D21D0 /* QRCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCoder.framework; path = "QRCoder-OSX.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A241DA297404E8CBC7D50C7B8C67DCC /* Pods-QRCoderOSXTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderOSXTests-dummy.m"; sourceTree = "<group>"; };
+		0C4C2D325636D40D5263DB47D59BB960 /* QRCoder-OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "QRCoder-OSX.xcconfig"; sourceTree = "<group>"; };
+		12B867AB10B1049A192EBF9A2BDCABC9 /* Pods-QRCoderiOSExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderiOSExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15BAA9C56176C8829C0F57CECBDF5D1C /* QRCoder-OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCoder-OSX-prefix.pch"; sourceTree = "<group>"; };
+		1CF821C5515C58C0E70AFC1ADEFC4C23 /* Pods-QRCoderOSXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E75C1EB3C5F28F7F1B010F42A3CD33D /* Pods-QRCoderiOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderiOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1FCC8E538308A97E3871B5CB4B6C9336 /* QRCoder-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "QRCoder-OSX.modulemap"; sourceTree = "<group>"; };
+		26403CE6A6CCFEA617B649483A9D0D18 /* Pods-QRCoderiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C810292ED033EBD44316E92EB20E127 /* Pods_QRCoderiOSExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QRCoderiOSExample.framework; path = "Pods-QRCoderiOSExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2C3FC12247D93C9DD0F84A620EAF81 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		31B6D4FB32411BB87C028A2EE620B1E3 /* Pods-QRCoderOSXExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXExample.debug.xcconfig"; sourceTree = "<group>"; };
+		3244A06CED0CF7A1D9849805C90CAB37 /* Pods_QRCoderiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QRCoderiOSTests.framework; path = "Pods-QRCoderiOSTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3949ACA269478133D72F686FEA6150DC /* Pods-QRCoderiOSExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSExample-resources.sh"; sourceTree = "<group>"; };
+		47302E5663DB66710F024BEDB62AFB3E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4A1CF0D32022979671B6E2BEF33F9C2B /* QRCoder-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCoder-OSX-dummy.m"; sourceTree = "<group>"; };
+		4EA899D854021BAC4CF2D68B13241872 /* Pods-QRCoderOSXExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderOSXExample-dummy.m"; sourceTree = "<group>"; };
+		51E6AF1E2C10B2D086C4883301A50238 /* Pods-QRCoderiOSTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QRCoderiOSTests.modulemap"; sourceTree = "<group>"; };
+		57861C9DA749C9D6D94CE657936CF0CC /* Pods-QRCoderOSXExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXExample-umbrella.h"; sourceTree = "<group>"; };
+		5ADE92EA42C0F82C177ED3145770C97F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		5B753319F73487511B2287AF94016500 /* Pods-QRCoderOSXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXTests.release.xcconfig"; sourceTree = "<group>"; };
+		607B838AA98E70B504F02CF9D52ADF80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634C43633F2CDDBB4680CA9377C52532 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63A0BA1FEC46B2D328748332AC7337C6 /* Pods-QRCoderiOSTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderiOSTests-umbrella.h"; sourceTree = "<group>"; };
+		691B160AF19BFED9FC8993A2E1F047E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C18BF92F7F4323F1372ED8677FC3492 /* Pods-QRCoderOSXTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QRCoderOSXTests.modulemap"; sourceTree = "<group>"; };
+		6DEE8472EE99524C4239EB8748C2119D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		70DBCEB88011F28DFE8F55079F4AED0A /* Pods-QRCoderiOSExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderiOSExample-umbrella.h"; sourceTree = "<group>"; };
+		73C41303BB4B26BAD253F4EAF1A03E8D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		757A995337B55AB2D1F22747B0C6515C /* Pods-QRCoderOSXExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXExample-resources.sh"; sourceTree = "<group>"; };
+		7888588460652C4C3ED260CCF3D765F3 /* QRCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QRCoder.framework; path = "QRCoder-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		789C40FFE79BA4ACE94904B58E678578 /* Pods_QRCoderOSXExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QRCoderOSXExample.framework; path = "Pods-QRCoderOSXExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C707A3951F60E0FB8581C9D91EF0A43 /* Pods-QRCoderiOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSExample.release.xcconfig"; sourceTree = "<group>"; };
+		7F3D6ADEAF06C3A92EDE7099CE44A4E6 /* QRCoder-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "QRCoder-iOS.modulemap"; path = "../QRCoder-iOS/QRCoder-iOS.modulemap"; sourceTree = "<group>"; };
+		8116FB06BD50838DF6FAF1521CBFE74F /* Pods-QRCoderiOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSTests-resources.sh"; sourceTree = "<group>"; };
+		81A8B94260809D3328A34AD3F4C6C4FD /* Pods-QRCoderOSXExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXExample-frameworks.sh"; sourceTree = "<group>"; };
+		82BD14F70F39D5D4F9369DC5AE063C90 /* Pods-QRCoderiOSExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QRCoderiOSExample.modulemap"; sourceTree = "<group>"; };
+		83887DBE3C8E330818816F5E468BA4DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		83E3497F013DB878C5B4693EEF6372CD /* Pods-QRCoderOSXTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderOSXTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		85042A907BD687C5A8D585FB749862FC /* QRCoder-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QRCoder-iOS-umbrella.h"; path = "../QRCoder-iOS/QRCoder-iOS-umbrella.h"; sourceTree = "<group>"; };
+		863C7651D5C2E755D23A47D01B4A7711 /* Pods-QRCoderiOSExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderiOSExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97CF77FFB833E7407B7003FC270A7DEA /* Pods-QRCoderiOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		9858D90BF87770983B3619F143CA88AB /* Pods-QRCoderiOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSExample.debug.xcconfig"; sourceTree = "<group>"; };
+		99074111C24D3A829ADBE3CB23545149 /* Pods-QRCoderOSXExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderOSXExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		9BE072A068F1D73A5240A0F1516906E7 /* Pods-QRCoderOSXTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXTests-resources.sh"; sourceTree = "<group>"; };
+		9CBEA288B636AA78B432FFF09052520D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A09E17C92F2766955210906101516396 /* Pods-QRCoderOSXTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QRCoderOSXTests-umbrella.h"; sourceTree = "<group>"; };
+		A72314849B44262771FADAEFEBC65940 /* Pods-QRCoderOSXExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QRCoderOSXExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9A8EA749FCC8C6EFD0E6F426FE2F43F /* QRCoder-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "QRCoder-iOS-prefix.pch"; path = "../QRCoder-iOS/QRCoder-iOS-prefix.pch"; sourceTree = "<group>"; };
+		AA8CE18434CBF45E9A9EE677A93D9D45 /* Pods-QRCoderiOSExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderiOSExample-dummy.m"; sourceTree = "<group>"; };
+		AF9A7F59B413D59834E9EF8F5A9262F4 /* QRCodeScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QRCodeScannerViewController.swift; sourceTree = "<group>"; };
+		B30305BCF75AC35BA28089B007128679 /* Pods-QRCoderOSXTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderOSXTests-frameworks.sh"; sourceTree = "<group>"; };
+		BA6ED453494A6E19940184E7A64BC906 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08C02EC0EDB36304EF15A37C847AF2C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../QRCoder-iOS/Info.plist"; sourceTree = "<group>"; };
+		CBF39F43CB3DFB1218C9787809199025 /* Pods_QRCoderOSXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QRCoderOSXTests.framework; path = "Pods-QRCoderOSXTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD71E45B678E32E4637F2247576D4D2F /* QRCoder-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "QRCoder-iOS.xcconfig"; path = "../QRCoder-iOS/QRCoder-iOS.xcconfig"; sourceTree = "<group>"; };
+		CF3AAC95638F27AB83C13834BBEC46E7 /* Pods-QRCoderiOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderiOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2787ECB3FFB6490F340009FA77FF508 /* Pods-QRCoderOSXTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QRCoderOSXTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D591C9817EAC99028494A1CCE1502D24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6A527A3BFAA75955CB83ABB9670135A /* QRCoder-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCoder-OSX-umbrella.h"; sourceTree = "<group>"; };
+		DF8E0DC123AE5AD7BD148A8106719A27 /* Pods-QRCoderiOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QRCoderiOSTests-dummy.m"; sourceTree = "<group>"; };
+		E1C955404126FDFBB857531F43CC3ADA /* Pods-QRCoderOSXExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderOSXExample.release.xcconfig"; sourceTree = "<group>"; };
+		E1DECFBB40A6A2B990168AFE531E7696 /* Pods-QRCoderiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QRCoderiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9E74DD4148FFCDD1F3A79B93F1EB9C9 /* Pods-QRCoderiOSExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QRCoderiOSExample-frameworks.sh"; sourceTree = "<group>"; };
+		E9FF314F39BD40B0B9A91EF584299F70 /* QRCoder-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "QRCoder-iOS-dummy.m"; path = "../QRCoder-iOS/QRCoder-iOS-dummy.m"; sourceTree = "<group>"; };
+		F7F1AD390507BD572EA550CFCA525DD7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD0728DFB6CCD6BD2063D2090FA55D6C /* Pods-QRCoderOSXExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QRCoderOSXExample.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		25D36FD98E49B17A45CDA561 /* Frameworks */ = {
+		0A021177D4380A1F6F2852BE27DC4096 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14B33654FE25420D16EEC623 /* Foundation.framework in Frameworks */,
-				5298FD4B97F6BF870A79554C /* QuartzCore.framework in Frameworks */,
-				A22B530A3963D2985EC36DBD /* UIKit.framework in Frameworks */,
+				BD9F773DFF2CC20309B3778ADF16EC84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		29F049B471847F1929CFE040 /* Frameworks */ = {
+		39C7764F40D8B35F0D115C97457A4AC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4D2161F9224C14398862B9B /* Cocoa.framework in Frameworks */,
+				F105C316BBF099A453859D79202204D0 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		37133246B40CF6C1ED9BFF61 /* Frameworks */ = {
+		5236EB5A572659BA7498E00C52DD503C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3025E8DDC42D58F6198002C0 /* Foundation.framework in Frameworks */,
+				E2C040A87385F09F3E6299D998A457D2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64FBF5001FC62170E5EFA4D7 /* Frameworks */ = {
+		7D3E00D66D6F25413B5E4DF988621154 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D2D8190840E24993C3EACB2 /* Foundation.framework in Frameworks */,
-				E54C298573F625CAA905BA8F /* QuartzCore.framework in Frameworks */,
-				47D8BEE14BDDAE5D8E2F15DC /* UIKit.framework in Frameworks */,
+				17E8311C4946A71A8A3B0BC90429510E /* AppKit.framework in Frameworks */,
+				B7E165D8CFAFDAA0A2D8B94FED3D2146 /* Cocoa.framework in Frameworks */,
+				917A63A0D41EA442C2DA6CB90CC73B88 /* Foundation.framework in Frameworks */,
+				7EBA1EBA1FF808FF68B6B96E2B89F02F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEEEC5CD9CCA1E62551345CD /* Frameworks */ = {
+		8CA09EF8188A8F9FC70368E4EEA26561 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				623AF7E48187A614865D2228 /* AppKit.framework in Frameworks */,
-				5A5BACB557EA6AA74C3F9691 /* Cocoa.framework in Frameworks */,
-				DAF2CAFA047581D0A34966AE /* Foundation.framework in Frameworks */,
-				D0913832B86DB32AABB56BA3 /* QuartzCore.framework in Frameworks */,
+				0FD590FA6089BDBD4DC18423EED8978B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C104FDF2BDAB36AF24510A1A /* Frameworks */ = {
+		BD34001578C56BCE3E4D4B1E710547C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1FABE8E17C542DC1A651D1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4C87610B9EB3B75D1147C1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A70168D551D1CE335CAAE8F4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDEE4562B11E45BED15F1ADD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4275DD99CA52CB8F5A386998 /* AppKit.framework in Frameworks */,
-				182B39EC34FD2984849E4AE1 /* Cocoa.framework in Frameworks */,
-				133857AC8DAB6430A613CCA1 /* Foundation.framework in Frameworks */,
-				168264A73AECA74EC46002DA /* QuartzCore.framework in Frameworks */,
+				FB592BF90B1927EE8E39897972A0334A /* Foundation.framework in Frameworks */,
+				58FE3705CD191639E047AF20F884C858 /* QuartzCore.framework in Frameworks */,
+				C0058A6C982AB8674168A81BEE914092 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2769B8C6142F060A67605FD8 /* QRCoder */ = {
+		1B39D172C08166B602615318EB6D9C89 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				27B2F393E42C3A39627F31C6 /* Pod */,
-				530C3B78C242746E66D7ACBF /* Support Files */,
+				83887DBE3C8E330818816F5E468BA4DF /* Foundation.framework */,
+				5ADE92EA42C0F82C177ED3145770C97F /* QuartzCore.framework */,
+				6DEE8472EE99524C4239EB8748C2119D /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		217F44719A98715D649851B808691C28 /* QRCoder */ = {
+			isa = PBXGroup;
+			children = (
+				B5D5494F1B4962427D443A74AE4EC308 /* Pod */,
+				ADA4FFC3017968EE551FFCF98BD4E831 /* Support Files */,
 			);
 			name = QRCoder;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		27B2F393E42C3A39627F31C6 /* Pod */ = {
+		46844B885E09CCC06E76E2BCA0F2CE6B /* Pods-QRCoderOSXTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1356CF39C492DF15DE627EE /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		3D62483E4E3DCFC9CDAC1379 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				C8FA22E6D8C22D302EED9688 /* AppKit.framework */,
-				0AFFE929B0888B1584B9A151 /* Cocoa.framework */,
-				4BF6211FC8F5B8E2FC3E6C09 /* Foundation.framework */,
-				36D4995752FD5796D840A2D5 /* QuartzCore.framework */,
-			);
-			name = "OS X";
-			sourceTree = "<group>";
-		};
-		530C3B78C242746E66D7ACBF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E97FA368BAFFF8D02D62332 /* Info.plist */,
-				63943E75919B01AEFD0B8C92 /* Info.plist */,
-				E760D3C4E7408777A61F1287 /* Info.plist */,
-				DFCC635509C72AC6C71F920D /* Info.plist */,
-				3E6E2840DACFDB873077A1CE /* Pods-QRCoderOSXExample-QRCoder.modulemap */,
-				470584F326DC850FEC18DEF0 /* Pods-QRCoderOSXExample-QRCoder.xcconfig */,
-				1FE96E89DD28354A7E84BB8D /* Pods-QRCoderOSXExample-QRCoder-Private.xcconfig */,
-				1676A99BF25419B105059CE2 /* Pods-QRCoderOSXExample-QRCoder-dummy.m */,
-				13C454FCA4C7584694B33177 /* Pods-QRCoderOSXExample-QRCoder-prefix.pch */,
-				380660145807569B4DA116A9 /* Pods-QRCoderOSXExample-QRCoder-umbrella.h */,
-				B82A8A8F933F417431F4526A /* Pods-QRCoderOSXTests-QRCoder.modulemap */,
-				FE986A0D107F6D96A390D6EE /* Pods-QRCoderOSXTests-QRCoder.xcconfig */,
-				51101F21C4BE16AEF3F66442 /* Pods-QRCoderOSXTests-QRCoder-Private.xcconfig */,
-				6DB71B85BC089F7D6E89E4FC /* Pods-QRCoderOSXTests-QRCoder-dummy.m */,
-				E0EEA88927C412E989676A21 /* Pods-QRCoderOSXTests-QRCoder-prefix.pch */,
-				C4AB93050EACF45854689F07 /* Pods-QRCoderOSXTests-QRCoder-umbrella.h */,
-				96B326B65A8FC72B1D10825C /* Pods-QRCoderiOSExample-QRCoder.modulemap */,
-				209EBBFB74CCE59962D8A74F /* Pods-QRCoderiOSExample-QRCoder.xcconfig */,
-				468EA6D8BE4FEDA2C851672D /* Pods-QRCoderiOSExample-QRCoder-Private.xcconfig */,
-				27A76D4BE1191733BA7C33F9 /* Pods-QRCoderiOSExample-QRCoder-dummy.m */,
-				067327C8DB09794051D13575 /* Pods-QRCoderiOSExample-QRCoder-prefix.pch */,
-				13B243C0CD15A7CB4D794204 /* Pods-QRCoderiOSExample-QRCoder-umbrella.h */,
-				8C85E22CD3FE2C9C7FF4E38C /* Pods-QRCoderiOSTests-QRCoder.modulemap */,
-				D5B69849F38121DC92AC2ADC /* Pods-QRCoderiOSTests-QRCoder.xcconfig */,
-				8F04F9DF11E6E8212766971F /* Pods-QRCoderiOSTests-QRCoder-Private.xcconfig */,
-				169DB984F22C91A693F87A7F /* Pods-QRCoderiOSTests-QRCoder-dummy.m */,
-				D388A08DDD281DE82E2FD5BC /* Pods-QRCoderiOSTests-QRCoder-prefix.pch */,
-				5B7C2A25AA439E0AE95BCFB0 /* Pods-QRCoderiOSTests-QRCoder-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-QRCoderOSXExample-QRCoder";
-			sourceTree = "<group>";
-		};
-		532B423216ED8A346653F44D /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A5BB9E00D2F0F0A3A631C664 /* Pods-QRCoderOSXExample */,
-				6DB74F63683D14545E19AE41 /* Pods-QRCoderOSXTests */,
-				C9CD17DD401FECEC365CBCC0 /* Pods-QRCoderiOSExample */,
-				A7490814F988399D056BDF16 /* Pods-QRCoderiOSTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		6DB74F63683D14545E19AE41 /* Pods-QRCoderOSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				F7CBBA1F00C1C9AFF0BAFB53 /* Info.plist */,
-				C96CE895DBD5B6C969D1E665 /* Pods-QRCoderOSXTests.modulemap */,
-				F54F70082C0163B27E37BF61 /* Pods-QRCoderOSXTests-acknowledgements.markdown */,
-				85EE99D3908B82DD26214ACB /* Pods-QRCoderOSXTests-acknowledgements.plist */,
-				448E3D03B62F5A3BC73DA320 /* Pods-QRCoderOSXTests-dummy.m */,
-				8D660DD3FB124789019047E0 /* Pods-QRCoderOSXTests-environment.h */,
-				E47B88BB19443A68DFB31EB2 /* Pods-QRCoderOSXTests-frameworks.sh */,
-				7ACEFCC4EC878AB9468AB45B /* Pods-QRCoderOSXTests-resources.sh */,
-				B72F3609982B3297B6C9889A /* Pods-QRCoderOSXTests-umbrella.h */,
-				60B601500A823EAB1D4E1653 /* Pods-QRCoderOSXTests.debug.xcconfig */,
-				2431614F14462F54131CF0D4 /* Pods-QRCoderOSXTests.release.xcconfig */,
+				634C43633F2CDDBB4680CA9377C52532 /* Info.plist */,
+				6C18BF92F7F4323F1372ED8677FC3492 /* Pods-QRCoderOSXTests.modulemap */,
+				83E3497F013DB878C5B4693EEF6372CD /* Pods-QRCoderOSXTests-acknowledgements.markdown */,
+				D2787ECB3FFB6490F340009FA77FF508 /* Pods-QRCoderOSXTests-acknowledgements.plist */,
+				0A241DA297404E8CBC7D50C7B8C67DCC /* Pods-QRCoderOSXTests-dummy.m */,
+				B30305BCF75AC35BA28089B007128679 /* Pods-QRCoderOSXTests-frameworks.sh */,
+				9BE072A068F1D73A5240A0F1516906E7 /* Pods-QRCoderOSXTests-resources.sh */,
+				A09E17C92F2766955210906101516396 /* Pods-QRCoderOSXTests-umbrella.h */,
+				1CF821C5515C58C0E70AFC1ADEFC4C23 /* Pods-QRCoderOSXTests.debug.xcconfig */,
+				5B753319F73487511B2287AF94016500 /* Pods-QRCoderOSXTests.release.xcconfig */,
 			);
 			name = "Pods-QRCoderOSXTests";
 			path = "Target Support Files/Pods-QRCoderOSXTests";
 			sourceTree = "<group>";
 		};
-		70DE28D171D106164AB0CE7E /* iOS */ = {
+		47B9BF115E0F6809C0FD397641C43C9A /* Pods-QRCoderiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				0942FD52130E50500C8D80E6 /* Foundation.framework */,
-				8103BFC62CF61B80F40F7086 /* QuartzCore.framework */,
-				0B9CECF2FF935A4A636C7A35 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		A5BB9E00D2F0F0A3A631C664 /* Pods-QRCoderOSXExample */ = {
-			isa = PBXGroup;
-			children = (
-				F01C0233BF7C7F4CC616372A /* Info.plist */,
-				328C02A227838955951DE98F /* Pods-QRCoderOSXExample.modulemap */,
-				0BCDE6F9B9ACC8190E880FF2 /* Pods-QRCoderOSXExample-acknowledgements.markdown */,
-				9AF9823CBD13B4BABF51507A /* Pods-QRCoderOSXExample-acknowledgements.plist */,
-				6CA4E735A9F7357E07ABADF3 /* Pods-QRCoderOSXExample-dummy.m */,
-				BEF9B264544BC5EF5E871C5E /* Pods-QRCoderOSXExample-environment.h */,
-				0716789CBB9F14C4827B3D0B /* Pods-QRCoderOSXExample-frameworks.sh */,
-				D6E28ED47F404F669CFC5F03 /* Pods-QRCoderOSXExample-resources.sh */,
-				88BF7EFA178EC40F794D7F3D /* Pods-QRCoderOSXExample-umbrella.h */,
-				BB1D60B93F7E29288EF62617 /* Pods-QRCoderOSXExample.debug.xcconfig */,
-				5D1C4DEAF1471A787674BDC1 /* Pods-QRCoderOSXExample.release.xcconfig */,
-			);
-			name = "Pods-QRCoderOSXExample";
-			path = "Target Support Files/Pods-QRCoderOSXExample";
-			sourceTree = "<group>";
-		};
-		A7490814F988399D056BDF16 /* Pods-QRCoderiOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				E7D757B24B68CB80CC22C591 /* Info.plist */,
-				856DB5A749B8EB4D002E8A6A /* Pods-QRCoderiOSTests.modulemap */,
-				6505DD888F122E2C05EF5B4A /* Pods-QRCoderiOSTests-acknowledgements.markdown */,
-				F1A0B0A0545F5D03513387EB /* Pods-QRCoderiOSTests-acknowledgements.plist */,
-				E8C351C029B2D3C5B8781153 /* Pods-QRCoderiOSTests-dummy.m */,
-				8353018ADE80D3927B1C37AB /* Pods-QRCoderiOSTests-environment.h */,
-				33DBF5B8CDA932CEAED9D77D /* Pods-QRCoderiOSTests-frameworks.sh */,
-				25E8237072BE497ECEBCE211 /* Pods-QRCoderiOSTests-resources.sh */,
-				A8F408154EF850EE8F2BA83A /* Pods-QRCoderiOSTests-umbrella.h */,
-				8F8EBF2A91AA43F346FECE26 /* Pods-QRCoderiOSTests.debug.xcconfig */,
-				6103931D0B33800F1C728649 /* Pods-QRCoderiOSTests.release.xcconfig */,
+				9CBEA288B636AA78B432FFF09052520D /* Info.plist */,
+				51E6AF1E2C10B2D086C4883301A50238 /* Pods-QRCoderiOSTests.modulemap */,
+				1E75C1EB3C5F28F7F1B010F42A3CD33D /* Pods-QRCoderiOSTests-acknowledgements.markdown */,
+				CF3AAC95638F27AB83C13834BBEC46E7 /* Pods-QRCoderiOSTests-acknowledgements.plist */,
+				DF8E0DC123AE5AD7BD148A8106719A27 /* Pods-QRCoderiOSTests-dummy.m */,
+				97CF77FFB833E7407B7003FC270A7DEA /* Pods-QRCoderiOSTests-frameworks.sh */,
+				8116FB06BD50838DF6FAF1521CBFE74F /* Pods-QRCoderiOSTests-resources.sh */,
+				63A0BA1FEC46B2D328748332AC7337C6 /* Pods-QRCoderiOSTests-umbrella.h */,
+				26403CE6A6CCFEA617B649483A9D0D18 /* Pods-QRCoderiOSTests.debug.xcconfig */,
+				E1DECFBB40A6A2B990168AFE531E7696 /* Pods-QRCoderiOSTests.release.xcconfig */,
 			);
 			name = "Pods-QRCoderiOSTests";
 			path = "Target Support Files/Pods-QRCoderiOSTests";
 			sourceTree = "<group>";
 		};
-		B6AB721A5249365E3E6FAFCC /* Development Pods */ = {
+		53879D100C3420A38546A49A092BE9C3 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				2769B8C6142F060A67605FD8 /* QRCoder */,
+				F7F1AD390507BD572EA550CFCA525DD7 /* AppKit.framework */,
+				73C41303BB4B26BAD253F4EAF1A03E8D /* Cocoa.framework */,
+				D591C9817EAC99028494A1CCE1502D24 /* Foundation.framework */,
+				47302E5663DB66710F024BEDB62AFB3E /* QuartzCore.framework */,
 			);
-			name = "Development Pods";
+			name = "OS X";
 			sourceTree = "<group>";
 		};
-		C9CD17DD401FECEC365CBCC0 /* Pods-QRCoderiOSExample */ = {
+		5AEB063D539AF40D408FEA770726E4B2 /* Pods-QRCoderiOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				A7450D06190A6F8172E4D868 /* Info.plist */,
-				D796007B5DF81C5D0313D15A /* Pods-QRCoderiOSExample.modulemap */,
-				5275A2B7E2ACB9A30387E8CA /* Pods-QRCoderiOSExample-acknowledgements.markdown */,
-				A75159EEF8904192F08070B9 /* Pods-QRCoderiOSExample-acknowledgements.plist */,
-				B919E4C8D43FD7D367B0DE69 /* Pods-QRCoderiOSExample-dummy.m */,
-				EAABF5A3AE4BE6A9F67F2569 /* Pods-QRCoderiOSExample-environment.h */,
-				999075CAA72ABEACDFFD9C52 /* Pods-QRCoderiOSExample-frameworks.sh */,
-				5A6150EE4BD523B7671FB193 /* Pods-QRCoderiOSExample-resources.sh */,
-				B5738C72DDD0C44E55F3B0F1 /* Pods-QRCoderiOSExample-umbrella.h */,
-				5C36E7F08C1DD0C2B7C691C0 /* Pods-QRCoderiOSExample.debug.xcconfig */,
-				AA0529320891429609C9EBC1 /* Pods-QRCoderiOSExample.release.xcconfig */,
+				607B838AA98E70B504F02CF9D52ADF80 /* Info.plist */,
+				82BD14F70F39D5D4F9369DC5AE063C90 /* Pods-QRCoderiOSExample.modulemap */,
+				12B867AB10B1049A192EBF9A2BDCABC9 /* Pods-QRCoderiOSExample-acknowledgements.markdown */,
+				863C7651D5C2E755D23A47D01B4A7711 /* Pods-QRCoderiOSExample-acknowledgements.plist */,
+				AA8CE18434CBF45E9A9EE677A93D9D45 /* Pods-QRCoderiOSExample-dummy.m */,
+				E9E74DD4148FFCDD1F3A79B93F1EB9C9 /* Pods-QRCoderiOSExample-frameworks.sh */,
+				3949ACA269478133D72F686FEA6150DC /* Pods-QRCoderiOSExample-resources.sh */,
+				70DBCEB88011F28DFE8F55079F4AED0A /* Pods-QRCoderiOSExample-umbrella.h */,
+				9858D90BF87770983B3619F143CA88AB /* Pods-QRCoderiOSExample.debug.xcconfig */,
+				7C707A3951F60E0FB8581C9D91EF0A43 /* Pods-QRCoderiOSExample.release.xcconfig */,
 			);
 			name = "Pods-QRCoderiOSExample";
 			path = "Target Support Files/Pods-QRCoderiOSExample";
 			sourceTree = "<group>";
 		};
-		D1356CF39C492DF15DE627EE /* Classes */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				F756B5FA405CAF586AC4DFF7 /* QRCodeGenerator.swift */,
-				1C30476B03295C4796C11017 /* QRCodeScannerViewController.swift */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9E50E153FA635A389B8553936FBAC599 /* Development Pods */,
+				EA0932C757F7C283990CBEAF981D8716 /* Frameworks */,
+				9EEA9867A8AC25194F16C067B26C3A29 /* Products */,
+				EBBA916C1401DE92211096E0D866A7B1 /* Targets Support Files */,
 			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
-		F126DB4C98AC675B180E24B2 /* Products */ = {
+		9E50E153FA635A389B8553936FBAC599 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CB8A0C865E8C29E6A570A5FB /* Pods_QRCoderOSXExample.framework */,
-				32F110B4FB850F19D161FD80 /* Pods_QRCoderOSXTests.framework */,
-				6C7B2C596163BB4089BC3216 /* Pods_QRCoderiOSExample.framework */,
-				EB11C57D03DD40BAEB1869DD /* Pods_QRCoderiOSTests.framework */,
-				D89C850AD52D3B5D26E6B1AF /* QRCoder.framework */,
-				67B688E22A6EEEA34027755A /* QRCoder.framework */,
-				C905E4A65BDF79D1DDBEDAD0 /* QRCoder.framework */,
-				EB2E450AFFD80886C60D5BFF /* QRCoder.framework */,
+				217F44719A98715D649851B808691C28 /* QRCoder */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9EEA9867A8AC25194F16C067B26C3A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C810292ED033EBD44316E92EB20E127 /* Pods_QRCoderiOSExample.framework */,
+				3244A06CED0CF7A1D9849805C90CAB37 /* Pods_QRCoderiOSTests.framework */,
+				789C40FFE79BA4ACE94904B58E678578 /* Pods_QRCoderOSXExample.framework */,
+				CBF39F43CB3DFB1218C9787809199025 /* Pods_QRCoderOSXTests.framework */,
+				02749AA66C8DECE9025E60CEC95D21D0 /* QRCoder.framework */,
+				7888588460652C4C3ED260CCF3D765F3 /* QRCoder.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F714511FE5A3C2EA494AC41F /* Frameworks */ = {
+		ADA4FFC3017968EE551FFCF98BD4E831 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3D62483E4E3DCFC9CDAC1379 /* OS X */,
-				70DE28D171D106164AB0CE7E /* iOS */,
+				BA6ED453494A6E19940184E7A64BC906 /* Info.plist */,
+				C08C02EC0EDB36304EF15A37C847AF2C /* Info.plist */,
+				7F3D6ADEAF06C3A92EDE7099CE44A4E6 /* QRCoder-iOS.modulemap */,
+				CD71E45B678E32E4637F2247576D4D2F /* QRCoder-iOS.xcconfig */,
+				E9FF314F39BD40B0B9A91EF584299F70 /* QRCoder-iOS-dummy.m */,
+				A9A8EA749FCC8C6EFD0E6F426FE2F43F /* QRCoder-iOS-prefix.pch */,
+				85042A907BD687C5A8D585FB749862FC /* QRCoder-iOS-umbrella.h */,
+				1FCC8E538308A97E3871B5CB4B6C9336 /* QRCoder-OSX.modulemap */,
+				0C4C2D325636D40D5263DB47D59BB960 /* QRCoder-OSX.xcconfig */,
+				4A1CF0D32022979671B6E2BEF33F9C2B /* QRCoder-OSX-dummy.m */,
+				15BAA9C56176C8829C0F57CECBDF5D1C /* QRCoder-OSX-prefix.pch */,
+				D6A527A3BFAA75955CB83ABB9670135A /* QRCoder-OSX-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/QRCoder-OSX";
+			sourceTree = "<group>";
+		};
+		B5D5494F1B4962427D443A74AE4EC308 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F34566DA9903CFD4E2EADE9957EFB206 /* Classes */,
+			);
+			name = Pod;
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DFB20FD97BF4E554558676DCAA80EE26 /* Pods-QRCoderOSXExample */ = {
+			isa = PBXGroup;
+			children = (
+				691B160AF19BFED9FC8993A2E1F047E5 /* Info.plist */,
+				FD0728DFB6CCD6BD2063D2090FA55D6C /* Pods-QRCoderOSXExample.modulemap */,
+				A72314849B44262771FADAEFEBC65940 /* Pods-QRCoderOSXExample-acknowledgements.markdown */,
+				99074111C24D3A829ADBE3CB23545149 /* Pods-QRCoderOSXExample-acknowledgements.plist */,
+				4EA899D854021BAC4CF2D68B13241872 /* Pods-QRCoderOSXExample-dummy.m */,
+				81A8B94260809D3328A34AD3F4C6C4FD /* Pods-QRCoderOSXExample-frameworks.sh */,
+				757A995337B55AB2D1F22747B0C6515C /* Pods-QRCoderOSXExample-resources.sh */,
+				57861C9DA749C9D6D94CE657936CF0CC /* Pods-QRCoderOSXExample-umbrella.h */,
+				31B6D4FB32411BB87C028A2EE620B1E3 /* Pods-QRCoderOSXExample.debug.xcconfig */,
+				E1C955404126FDFBB857531F43CC3ADA /* Pods-QRCoderOSXExample.release.xcconfig */,
+			);
+			name = "Pods-QRCoderOSXExample";
+			path = "Target Support Files/Pods-QRCoderOSXExample";
+			sourceTree = "<group>";
+		};
+		EA0932C757F7C283990CBEAF981D8716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B39D172C08166B602615318EB6D9C89 /* iOS */,
+				53879D100C3420A38546A49A092BE9C3 /* OS X */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB01DE7D3378A1C7B5EEAF74 = {
+		EBBA916C1401DE92211096E0D866A7B1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1FB6BE589F197E5ECED640AE /* Podfile */,
-				B6AB721A5249365E3E6FAFCC /* Development Pods */,
-				F714511FE5A3C2EA494AC41F /* Frameworks */,
-				F126DB4C98AC675B180E24B2 /* Products */,
-				532B423216ED8A346653F44D /* Targets Support Files */,
+				5AEB063D539AF40D408FEA770726E4B2 /* Pods-QRCoderiOSExample */,
+				47B9BF115E0F6809C0FD397641C43C9A /* Pods-QRCoderiOSTests */,
+				DFB20FD97BF4E554558676DCAA80EE26 /* Pods-QRCoderOSXExample */,
+				46844B885E09CCC06E76E2BCA0F2CE6B /* Pods-QRCoderOSXTests */,
 			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F34566DA9903CFD4E2EADE9957EFB206 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2F2C3FC12247D93C9DD0F84A620EAF81 /* QRCodeGenerator.swift */,
+				AF9A7F59B413D59834E9EF8F5A9262F4 /* QRCodeScannerViewController.swift */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		19FDA853065DD5E22CBB8E02 /* Headers */ = {
+		395F2CFD96015467EF7E02102082E487 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A8B740FCCFBC8FA98DB8A4B /* Pods-QRCoderiOSTests-QRCoder-umbrella.h in Headers */,
+				55A0EAA7FDBCBB211ADCB7BACA3D449F /* Pods-QRCoderiOSExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25789F500D5BC94AB46BDC28 /* Headers */ = {
+		6A40A8C424244644215B991F18E72F28 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE43E0D5ECC792A168156B29 /* Pods-QRCoderiOSExample-umbrella.h in Headers */,
+				F86178B4D4FED4E9E8A1D72ED3F0EF5E /* Pods-QRCoderOSXTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F6831045015B41967D289E7 /* Headers */ = {
+		A9FC6ACCD02336D34C130132737E423A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				446FEF3904BD1363E858C5A5 /* Pods-QRCoderOSXExample-umbrella.h in Headers */,
+				E6718323204F8E1AFBECFF26C2A10E59 /* Pods-QRCoderiOSTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D4355B50C5A0D3C8E03AB00 /* Headers */ = {
+		AC37AA54FB8449501DECDE63F5C23C4B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50F4540BCC8B747E62B5051 /* Pods-QRCoderOSXTests-QRCoder-umbrella.h in Headers */,
+				4B0851F4C5F437125C4604E530C751C3 /* QRCoder-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DCD19590775913364AC32F8 /* Headers */ = {
+		D064D5A9DBBBB733E34BAB6587D0C07F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACE8381024B5DB3EBD47186F /* Pods-QRCoderiOSTests-umbrella.h in Headers */,
+				2093F47300E54A276AD6FB205D807B91 /* Pods-QRCoderOSXExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		950ACA022F9DCB77D77C3096 /* Headers */ = {
+		FC12B0BA2F068AEF940A523CC63002FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79FF3EF29FBA9D1FDE2F15DC /* Pods-QRCoderOSXTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A71C5298035A5555BFBB8FC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0FB877BC68C9FC071F58A2E /* Pods-QRCoderOSXExample-QRCoder-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD162652A1C899732F55C6B6 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A398ED608B549F4A4CC1F6B5 /* Pods-QRCoderiOSExample-QRCoder-umbrella.h in Headers */,
+				86A6FDAAF7141F4FBFA06668ED6B207B /* QRCoder-OSX-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		22A3984A2D7E7DB9F7E12A14 /* Pods-QRCoderiOSExample-QRCoder */ = {
+		162714759D9BB9293EE069EA16FA2E82 /* QRCoder-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E02025A3FCD837B0942A6B5F /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSExample-QRCoder" */;
+			buildConfigurationList = 79ECC3FC05B230D61C848687A84FAA73 /* Build configuration list for PBXNativeTarget "QRCoder-iOS" */;
 			buildPhases = (
-				A005477BD9CB9D90C57B069C /* Sources */,
-				64FBF5001FC62170E5EFA4D7 /* Frameworks */,
-				DD162652A1C899732F55C6B6 /* Headers */,
+				8DF9FBE0F36E0906B58BF09C5465DF6D /* Sources */,
+				BD34001578C56BCE3E4D4B1E710547C2 /* Frameworks */,
+				AC37AA54FB8449501DECDE63F5C23C4B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-QRCoderiOSExample-QRCoder";
-			productName = "Pods-QRCoderiOSExample-QRCoder";
-			productReference = 67B688E22A6EEEA34027755A /* QRCoder.framework */;
+			name = "QRCoder-iOS";
+			productName = "QRCoder-iOS";
+			productReference = 7888588460652C4C3ED260CCF3D765F3 /* QRCoder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2A0EEDA26F80F33A86D3A9B0 /* Pods-QRCoderOSXTests */ = {
+		455B790E4772A1C6B46009D5EE566645 /* Pods-QRCoderOSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EFF14D55397EA08F32E2D33F /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXTests" */;
+			buildConfigurationList = 5ED013312470B32793B12A75C888E246 /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXTests" */;
 			buildPhases = (
-				9A1F9352FD01F4A5540AAD10 /* Sources */,
-				29F049B471847F1929CFE040 /* Frameworks */,
-				950ACA022F9DCB77D77C3096 /* Headers */,
+				C54427572FE2AC3394D4576CA9489E74 /* Sources */,
+				5236EB5A572659BA7498E00C52DD503C /* Frameworks */,
+				6A40A8C424244644215B991F18E72F28 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AA92B56056244E35FE2F272F /* PBXTargetDependency */,
+				23E972649C6493640044E9048AD218A8 /* PBXTargetDependency */,
 			);
 			name = "Pods-QRCoderOSXTests";
 			productName = "Pods-QRCoderOSXTests";
-			productReference = 32F110B4FB850F19D161FD80 /* Pods_QRCoderOSXTests.framework */;
+			productReference = CBF39F43CB3DFB1218C9787809199025 /* Pods_QRCoderOSXTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4D2AF1EF762E7A527E50B99B /* Pods-QRCoderOSXExample */ = {
+		4963E71000DF20FE3D40AB57ABF609E0 /* Pods-QRCoderiOSExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91CD6BB13F5F58F8753D622F /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXExample" */;
+			buildConfigurationList = 5186CF94410496568E9A52156A84349F /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSExample" */;
 			buildPhases = (
-				4FE02557B3012F69263CECF1 /* Sources */,
-				C104FDF2BDAB36AF24510A1A /* Frameworks */,
-				3F6831045015B41967D289E7 /* Headers */,
+				F803F7E1EE368EDE5A4C54DDB7E73409 /* Sources */,
+				8CA09EF8188A8F9FC70368E4EEA26561 /* Frameworks */,
+				395F2CFD96015467EF7E02102082E487 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				821DC9060F94BE482195FBDA /* PBXTargetDependency */,
-			);
-			name = "Pods-QRCoderOSXExample";
-			productName = "Pods-QRCoderOSXExample";
-			productReference = CB8A0C865E8C29E6A570A5FB /* Pods_QRCoderOSXExample.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		62920D263D260B4AD67F8E11 /* Pods-QRCoderiOSTests-QRCoder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99FA63480A2A1ED195EE13A2 /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSTests-QRCoder" */;
-			buildPhases = (
-				8E5CA2CF03CD9DA87B65BA85 /* Sources */,
-				25D36FD98E49B17A45CDA561 /* Frameworks */,
-				19FDA853065DD5E22CBB8E02 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-QRCoderiOSTests-QRCoder";
-			productName = "Pods-QRCoderiOSTests-QRCoder";
-			productReference = D89C850AD52D3B5D26E6B1AF /* QRCoder.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		70796148093104CA2F0D9BDC /* Pods-QRCoderOSXExample-QRCoder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACB33AE37A57091117D19E1C /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXExample-QRCoder" */;
-			buildPhases = (
-				48307885DA80B26BB0F84114 /* Sources */,
-				FDEE4562B11E45BED15F1ADD /* Frameworks */,
-				A71C5298035A5555BFBB8FC1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-QRCoderOSXExample-QRCoder";
-			productName = "Pods-QRCoderOSXExample-QRCoder";
-			productReference = EB2E450AFFD80886C60D5BFF /* QRCoder.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E2B521231C56617636481BCF /* Pods-QRCoderOSXTests-QRCoder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5669182E5EF52D0E3DD9A14B /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXTests-QRCoder" */;
-			buildPhases = (
-				7A9EFE5323E5C9A539FB0C23 /* Sources */,
-				AEEEC5CD9CCA1E62551345CD /* Frameworks */,
-				4D4355B50C5A0D3C8E03AB00 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-QRCoderOSXTests-QRCoder";
-			productName = "Pods-QRCoderOSXTests-QRCoder";
-			productReference = C905E4A65BDF79D1DDBEDAD0 /* QRCoder.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E3DAA64020BA0651C2FA1894 /* Pods-QRCoderiOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7255D26C890F584756E23F08 /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSTests" */;
-			buildPhases = (
-				7412EA192BB775449481C533 /* Sources */,
-				37133246B40CF6C1ED9BFF61 /* Frameworks */,
-				7DCD19590775913364AC32F8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4F6E340B4A4EFE46B5A9A8C6 /* PBXTargetDependency */,
-			);
-			name = "Pods-QRCoderiOSTests";
-			productName = "Pods-QRCoderiOSTests";
-			productReference = EB11C57D03DD40BAEB1869DD /* Pods_QRCoderiOSTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		EB08FD9D97145C8716F6D9B8 /* Pods-QRCoderiOSExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5CF4331C8E9F62A13166AF /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSExample" */;
-			buildPhases = (
-				8145B180CAB65A2573DA3400 /* Sources */,
-				F4C87610B9EB3B75D1147C1B /* Frameworks */,
-				25789F500D5BC94AB46BDC28 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A3BB8A6831E1E516E44342D6 /* PBXTargetDependency */,
+				3C5FF42F4749BC04F9C75A9CCB3C88EE /* PBXTargetDependency */,
 			);
 			name = "Pods-QRCoderiOSExample";
 			productName = "Pods-QRCoderiOSExample";
-			productReference = 6C7B2C596163BB4089BC3216 /* Pods_QRCoderiOSExample.framework */;
+			productReference = 2C810292ED033EBD44316E92EB20E127 /* Pods_QRCoderiOSExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A13361AD610C760EB8C98B32EA16598 /* Pods-QRCoderiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43514BE8B05B2736C66B837C56D4D848 /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSTests" */;
+			buildPhases = (
+				A552F661975F75D65AB13F23A9A7038C /* Sources */,
+				0A021177D4380A1F6F2852BE27DC4096 /* Frameworks */,
+				A9FC6ACCD02336D34C130132737E423A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42BD29C2CCCBF9D2880568FF47C8EB9A /* PBXTargetDependency */,
+			);
+			name = "Pods-QRCoderiOSTests";
+			productName = "Pods-QRCoderiOSTests";
+			productReference = 3244A06CED0CF7A1D9849805C90CAB37 /* Pods_QRCoderiOSTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB856300AF8F86E98F9E2E0C6245A6F6 /* QRCoder-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 466B76B4A8F6FFBA3059CF9E4F4A1CD0 /* Build configuration list for PBXNativeTarget "QRCoder-OSX" */;
+			buildPhases = (
+				7DD95CAF3770907222263C6D5C7AB064 /* Sources */,
+				7D3E00D66D6F25413B5E4DF988621154 /* Frameworks */,
+				FC12B0BA2F068AEF940A523CC63002FD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QRCoder-OSX";
+			productName = "QRCoder-OSX";
+			productReference = 02749AA66C8DECE9025E60CEC95D21D0 /* QRCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBCCD38EA036B8DB90D6331BDE551869 /* Pods-QRCoderOSXExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174B9FF5B5A4F09EEDE5B9ACDE658F7F /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXExample" */;
+			buildPhases = (
+				AB170A1A8CB16108A4D3117916543681 /* Sources */,
+				39C7764F40D8B35F0D115C97457A4AC2 /* Frameworks */,
+				D064D5A9DBBBB733E34BAB6587D0C07F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66885FA44C2FFB626A718AC86BEE0A36 /* PBXTargetDependency */,
+			);
+			name = "Pods-QRCoderOSXExample";
+			productName = "Pods-QRCoderOSXExample";
+			productReference = 789C40FFE79BA4ACE94904B58E678578 /* Pods_QRCoderOSXExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9D1F4068604835EE855BDD3 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0510;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 4DA2275378D1813C12EA713B /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FB01DE7D3378A1C7B5EEAF74;
-			productRefGroup = F126DB4C98AC675B180E24B2 /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9EEA9867A8AC25194F16C067B26C3A29 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D2AF1EF762E7A527E50B99B /* Pods-QRCoderOSXExample */,
-				70796148093104CA2F0D9BDC /* Pods-QRCoderOSXExample-QRCoder */,
-				2A0EEDA26F80F33A86D3A9B0 /* Pods-QRCoderOSXTests */,
-				E2B521231C56617636481BCF /* Pods-QRCoderOSXTests-QRCoder */,
-				EB08FD9D97145C8716F6D9B8 /* Pods-QRCoderiOSExample */,
-				22A3984A2D7E7DB9F7E12A14 /* Pods-QRCoderiOSExample-QRCoder */,
-				E3DAA64020BA0651C2FA1894 /* Pods-QRCoderiOSTests */,
-				62920D263D260B4AD67F8E11 /* Pods-QRCoderiOSTests-QRCoder */,
+				4963E71000DF20FE3D40AB57ABF609E0 /* Pods-QRCoderiOSExample */,
+				6A13361AD610C760EB8C98B32EA16598 /* Pods-QRCoderiOSTests */,
+				EBCCD38EA036B8DB90D6331BDE551869 /* Pods-QRCoderOSXExample */,
+				455B790E4772A1C6B46009D5EE566645 /* Pods-QRCoderOSXTests */,
+				162714759D9BB9293EE069EA16FA2E82 /* QRCoder-iOS */,
+				DB856300AF8F86E98F9E2E0C6245A6F6 /* QRCoder-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		48307885DA80B26BB0F84114 /* Sources */ = {
+		7DD95CAF3770907222263C6D5C7AB064 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D99ACC1443882FB55C975611 /* Pods-QRCoderOSXExample-QRCoder-dummy.m in Sources */,
-				BB46C696EE91CB0DC36D1704 /* QRCodeGenerator.swift in Sources */,
+				59BE80EEC746DDA7B2F1BA73C21750BB /* QRCodeGenerator.swift in Sources */,
+				794F581082A80BAA02A111F9E1912CD9 /* QRCoder-OSX-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FE02557B3012F69263CECF1 /* Sources */ = {
+		8DF9FBE0F36E0906B58BF09C5465DF6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0CE80007B53F5B822A3A6E2 /* Pods-QRCoderOSXExample-dummy.m in Sources */,
+				6DE00B873D740C2D91AED8BEAF62A611 /* QRCodeGenerator.swift in Sources */,
+				C9D0AA778C68A3C4B715010CAD4C80E3 /* QRCoder-iOS-dummy.m in Sources */,
+				494F4AA3334B17D1FD5577DA3F3641E8 /* QRCodeScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7412EA192BB775449481C533 /* Sources */ = {
+		A552F661975F75D65AB13F23A9A7038C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				561372F8ACF96D70464C4911 /* Pods-QRCoderiOSTests-dummy.m in Sources */,
+				33C2FDA33AECC9F281AAF7D8AC6C4141 /* Pods-QRCoderiOSTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A9EFE5323E5C9A539FB0C23 /* Sources */ = {
+		AB170A1A8CB16108A4D3117916543681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E0CA29BEBD6EFB044C8D0A2 /* Pods-QRCoderOSXTests-QRCoder-dummy.m in Sources */,
-				AA9AD2741ED72B5795484E9C /* QRCodeGenerator.swift in Sources */,
+				E508653F3F3BC22E3CE9CAF5C5AE72E0 /* Pods-QRCoderOSXExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8145B180CAB65A2573DA3400 /* Sources */ = {
+		C54427572FE2AC3394D4576CA9489E74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64F4C3B3A6B15649970E73BD /* Pods-QRCoderiOSExample-dummy.m in Sources */,
+				325B416E8842C2965FEF4621C77833B1 /* Pods-QRCoderOSXTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E5CA2CF03CD9DA87B65BA85 /* Sources */ = {
+		F803F7E1EE368EDE5A4C54DDB7E73409 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF701C0B5AABDB1D5EB9BAAE /* Pods-QRCoderiOSTests-QRCoder-dummy.m in Sources */,
-				9BBAA211CBEC306FE5D4B64D /* QRCodeGenerator.swift in Sources */,
-				5CAE88C2F3835418C40D2761 /* QRCodeScannerViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A1F9352FD01F4A5540AAD10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AADA9A7C6641EF0AACEE4D /* Pods-QRCoderOSXTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A005477BD9CB9D90C57B069C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD69F1415D80E80BBAB9EA76 /* Pods-QRCoderiOSExample-QRCoder-dummy.m in Sources */,
-				21173DF47C1B48FCF2CBE903 /* QRCodeGenerator.swift in Sources */,
-				2C4CED8C0AA13921B3BDFFC8 /* QRCodeScannerViewController.swift in Sources */,
+				5289612DD70031E91968406D4B4C15EF /* Pods-QRCoderiOSExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4F6E340B4A4EFE46B5A9A8C6 /* PBXTargetDependency */ = {
+		23E972649C6493640044E9048AD218A8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-QRCoderiOSTests-QRCoder";
-			target = 62920D263D260B4AD67F8E11 /* Pods-QRCoderiOSTests-QRCoder */;
-			targetProxy = BD95D459DD011893CC1CC2D9 /* PBXContainerItemProxy */;
+			name = "QRCoder-OSX";
+			target = DB856300AF8F86E98F9E2E0C6245A6F6 /* QRCoder-OSX */;
+			targetProxy = D76B3C0D165D0ADF73820863D7EB6933 /* PBXContainerItemProxy */;
 		};
-		821DC9060F94BE482195FBDA /* PBXTargetDependency */ = {
+		3C5FF42F4749BC04F9C75A9CCB3C88EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-QRCoderOSXExample-QRCoder";
-			target = 70796148093104CA2F0D9BDC /* Pods-QRCoderOSXExample-QRCoder */;
-			targetProxy = 907A522877C9E54142CBB0CA /* PBXContainerItemProxy */;
+			name = "QRCoder-iOS";
+			target = 162714759D9BB9293EE069EA16FA2E82 /* QRCoder-iOS */;
+			targetProxy = DF80FAA6FD6758C6CF365D5521F933A9 /* PBXContainerItemProxy */;
 		};
-		A3BB8A6831E1E516E44342D6 /* PBXTargetDependency */ = {
+		42BD29C2CCCBF9D2880568FF47C8EB9A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-QRCoderiOSExample-QRCoder";
-			target = 22A3984A2D7E7DB9F7E12A14 /* Pods-QRCoderiOSExample-QRCoder */;
-			targetProxy = 4CE7F2F27F7125E8B6475E90 /* PBXContainerItemProxy */;
+			name = "QRCoder-iOS";
+			target = 162714759D9BB9293EE069EA16FA2E82 /* QRCoder-iOS */;
+			targetProxy = 8689E9F5B0076967C93D3EF05A6D06FE /* PBXContainerItemProxy */;
 		};
-		AA92B56056244E35FE2F272F /* PBXTargetDependency */ = {
+		66885FA44C2FFB626A718AC86BEE0A36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-QRCoderOSXTests-QRCoder";
-			target = E2B521231C56617636481BCF /* Pods-QRCoderOSXTests-QRCoder */;
-			targetProxy = D5E11499149A6322F81BF4BD /* PBXContainerItemProxy */;
+			name = "QRCoder-OSX";
+			target = DB856300AF8F86E98F9E2E0C6245A6F6 /* QRCoder-OSX */;
+			targetProxy = 482EA595A1080AA2770D470716487005 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C46B92D23B6FCB5A873F239 /* Release */ = {
+		13CDB4284F5AFD03FB151AABEFFAA572 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6103931D0B33800F1C728649 /* Pods-QRCoderiOSTests.release.xcconfig */;
+			baseConfigurationReference = 7C707A3951F60E0FB8581C9D91EF0A43 /* Pods-QRCoderiOSExample.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSTests/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSExample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSTests/Pods-QRCoderiOSTests.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSExample/Pods-QRCoderiOSExample.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QRCoderiOSTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QRCoderiOSExample;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		1F3CDFA0502096B3CA2BDE3A /* Debug */ = {
+		1E34A21BC9FA7387F308D5B3987EDE50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C36E7F08C1DD0C2B7C691C0 /* Pods-QRCoderiOSExample.debug.xcconfig */;
+			baseConfigurationReference = 0C4C2D325636D40D5263DB47D59BB960 /* QRCoder-OSX.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSExample/Info.plist";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCoder-OSX/QRCoder-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCoder-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/QRCoder-OSX/QRCoder-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = QRCoder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		311B7C450D88005536F709E02F9865E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD71E45B678E32E4637F2247576D4D2F /* QRCoder-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCoder-iOS/QRCoder-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCoder-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSExample/Pods-QRCoderiOSExample.modulemap";
+				MODULEMAP_FILE = "Target Support Files/QRCoder-iOS/QRCoder-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QRCoderiOSExample;
+				PRODUCT_NAME = QRCoder;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		215652192DF4F0962BB39CD5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51101F21C4BE16AEF3F66442 /* Pods-QRCoderOSXTests-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXTests-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2D6310635C39BA4279370628 /* Debug */ = {
+		63483A20F55C04869F152E057B6DEFA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -913,11 +787,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -931,43 +808,163 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		36E85966329C60E569BEC825 /* Debug */ = {
+		69D7ABD6F16CCF0DC32120626F49A280 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FE96E89DD28354A7E84BB8D /* Pods-QRCoderOSXExample-QRCoder-Private.xcconfig */;
+			baseConfigurationReference = E1DECFBB40A6A2B990168AFE531E7696 /* Pods-QRCoderiOSTests.release.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSTests/Pods-QRCoderiOSTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QRCoderiOSTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9037C896B7FF3BAEFA37D99BEE68375E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4C2D325636D40D5263DB47D59BB960 /* QRCoder-OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderOSXExample-QRCoder/Pods-QRCoderOSXExample-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXExample-QRCoder/Info.plist";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCoder-OSX/QRCoder-OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCoder-OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXExample-QRCoder/Pods-QRCoderOSXExample-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/QRCoder-OSX/QRCoder-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = QRCoder;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB4B558DC746257F42E468E28AAEE1DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD71E45B678E32E4637F2247576D4D2F /* QRCoder-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QRCoder-iOS/QRCoder-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QRCoder-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QRCoder-iOS/QRCoder-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QRCoder;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF872534A60594CA252864B649B08493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B6D4FB32411BB87C028A2EE620B1E3 /* Pods-QRCoderOSXExample.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QRCoderOSXExample;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		39AB8166267990A2C642BCDB /* Release */ = {
+		B1D706722BE7F6BEC73528195760B284 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -981,10 +978,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -993,442 +994,274 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5E31CCD529891BC237880B15 /* Debug */ = {
+		B9B17294CC794D29E2DBA8D4B1814AEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60B601500A823EAB1D4E1653 /* Pods-QRCoderOSXTests.debug.xcconfig */;
+			baseConfigurationReference = E1C955404126FDFBB857531F43CC3ADA /* Pods-QRCoderOSXExample.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QRCoderOSXExample;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8FA4A72DA030CDA7927A31F2D739BB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9858D90BF87770983B3619F143CA88AB /* Pods-QRCoderiOSExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSExample/Pods-QRCoderiOSExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QRCoderiOSExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E3215027C7565D5F642398213F776651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF821C5515C58C0E70AFC1ADEFC4C23 /* Pods-QRCoderOSXTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXTests/Pods-QRCoderOSXTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_QRCoderOSXTests;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		6AACE669F9958CF0DF7E128A /* Debug */ = {
+		E694127271E1B8D7A7BE8AB8931A29D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F8EBF2A91AA43F346FECE26 /* Pods-QRCoderiOSTests.debug.xcconfig */;
+			baseConfigurationReference = 5B753319F73487511B2287AF94016500 /* Pods-QRCoderOSXTests.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXTests/Pods-QRCoderOSXTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QRCoderOSXTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EDE555668279D7AE484479337716046A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26403CE6A6CCFEA617B649483A9D0D18 /* Pods-QRCoderiOSTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSTests/Pods-QRCoderiOSTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_QRCoderiOSTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		93094323B840566DC9ABBB2A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 468EA6D8BE4FEDA2C851672D /* Pods-QRCoderiOSExample-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSExample-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9843DD69FA8675EAE1C400DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2431614F14462F54131CF0D4 /* Pods-QRCoderOSXTests.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXTests/Pods-QRCoderOSXTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QRCoderOSXTests;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DF385EEA2AB6A60B6544DB8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F04F9DF11E6E8212766971F /* Pods-QRCoderiOSTests-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSTests-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E1597797E67EB105AF85BFC7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB1D60B93F7E29288EF62617 /* Pods-QRCoderOSXExample.debug.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QRCoderOSXExample;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EE7C352A526DA133BFE5588F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 468EA6D8BE4FEDA2C851672D /* Pods-QRCoderiOSExample-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSExample-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSExample-QRCoder/Pods-QRCoderiOSExample-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F1F6F71D100BBD88E38D435C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51101F21C4BE16AEF3F66442 /* Pods-QRCoderOSXTests-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXTests-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXTests-QRCoder/Pods-QRCoderOSXTests-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F278ADFFE559E98DD782B621 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0529320891429609C9EBC1 /* Pods-QRCoderiOSExample.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSExample/Pods-QRCoderiOSExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QRCoderiOSExample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F2F437E03CE8FFCB751EB5DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FE96E89DD28354A7E84BB8D /* Pods-QRCoderOSXExample-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderOSXExample-QRCoder/Pods-QRCoderOSXExample-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXExample-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXExample-QRCoder/Pods-QRCoderOSXExample-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FAE99045874F0D1B17A117C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F04F9DF11E6E8212766971F /* Pods-QRCoderiOSTests-QRCoder-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderiOSTests-QRCoder/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderiOSTests-QRCoder/Pods-QRCoderiOSTests-QRCoder.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = QRCoder;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FB5AABAE4A39FD56D6CCCD95 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D1C4DEAF1471A787674BDC1 /* Pods-QRCoderOSXExample.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "Target Support Files/Pods-QRCoderOSXExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_QRCoderOSXExample;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4DA2275378D1813C12EA713B /* Build configuration list for PBXProject "Pods" */ = {
+		174B9FF5B5A4F09EEDE5B9ACDE658F7F /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D6310635C39BA4279370628 /* Debug */,
-				39AB8166267990A2C642BCDB /* Release */,
+				AF872534A60594CA252864B649B08493 /* Debug */,
+				B9B17294CC794D29E2DBA8D4B1814AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5669182E5EF52D0E3DD9A14B /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXTests-QRCoder" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				215652192DF4F0962BB39CD5 /* Debug */,
-				F1F6F71D100BBD88E38D435C /* Release */,
+				63483A20F55C04869F152E057B6DEFA2 /* Debug */,
+				B1D706722BE7F6BEC73528195760B284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7255D26C890F584756E23F08 /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSTests" */ = {
+		43514BE8B05B2736C66B837C56D4D848 /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AACE669F9958CF0DF7E128A /* Debug */,
-				0C46B92D23B6FCB5A873F239 /* Release */,
+				EDE555668279D7AE484479337716046A /* Debug */,
+				69D7ABD6F16CCF0DC32120626F49A280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91CD6BB13F5F58F8753D622F /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXExample" */ = {
+		466B76B4A8F6FFBA3059CF9E4F4A1CD0 /* Build configuration list for PBXNativeTarget "QRCoder-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1597797E67EB105AF85BFC7 /* Debug */,
-				FB5AABAE4A39FD56D6CCCD95 /* Release */,
+				1E34A21BC9FA7387F308D5B3987EDE50 /* Debug */,
+				9037C896B7FF3BAEFA37D99BEE68375E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99FA63480A2A1ED195EE13A2 /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSTests-QRCoder" */ = {
+		5186CF94410496568E9A52156A84349F /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF385EEA2AB6A60B6544DB8E /* Debug */,
-				FAE99045874F0D1B17A117C7 /* Release */,
+				C8FA4A72DA030CDA7927A31F2D739BB3 /* Debug */,
+				13CDB4284F5AFD03FB151AABEFFAA572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5CF4331C8E9F62A13166AF /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSExample" */ = {
+		5ED013312470B32793B12A75C888E246 /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F3CDFA0502096B3CA2BDE3A /* Debug */,
-				F278ADFFE559E98DD782B621 /* Release */,
+				E3215027C7565D5F642398213F776651 /* Debug */,
+				E694127271E1B8D7A7BE8AB8931A29D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACB33AE37A57091117D19E1C /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXExample-QRCoder" */ = {
+		79ECC3FC05B230D61C848687A84FAA73 /* Build configuration list for PBXNativeTarget "QRCoder-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36E85966329C60E569BEC825 /* Debug */,
-				F2F437E03CE8FFCB751EB5DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E02025A3FCD837B0942A6B5F /* Build configuration list for PBXNativeTarget "Pods-QRCoderiOSExample-QRCoder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE7C352A526DA133BFE5588F /* Debug */,
-				93094323B840566DC9ABBB2A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EFF14D55397EA08F32E2D33F /* Build configuration list for PBXNativeTarget "Pods-QRCoderOSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E31CCD529891BC237880B15 /* Debug */,
-				9843DD69FA8675EAE1C400DD /* Release */,
+				311B7C450D88005536F709E02F9865E6 /* Debug */,
+				AB4B558DC746257F42E468E28AAEE1DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9D1F4068604835EE855BDD3 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

@@ -1,1 +1,0 @@
-PODS_QRCODEROSXEXAMPLE_QRCODER_OTHER_LDFLAGS = -framework "AppKit" -framework "Foundation" -framework "QuartzCore"
