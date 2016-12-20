@@ -133,7 +133,15 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     public func startQRCodeScanningSession(){
         updateVideoOrientation(UIApplication.sharedApplication().statusBarOrientation)
         highlightView.frame = CGRectZero
-        self.captureSession.startRunning()
+        captureSession.startRunning()
+    }
+    
+    /**
+     Stops the scanning session
+     */
+    public func stopQRCodeScanningSession(){
+        captureSession.stopRunning()
+        highlightView.frame = CGRectZero
     }
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
