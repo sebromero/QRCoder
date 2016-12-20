@@ -21,7 +21,7 @@ class QRCoderSharedTests: XCTestCase {
     }
     
     func testImageFromString() {
-        let image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize)
+        guard let image = qrCodeGenerator.createImage(qrCodeContent, size: imageSize) else { XCTFail(); return }
         XCTAssertNotNil(image)
         XCTAssertEqual(image.size, imageSize)
     }

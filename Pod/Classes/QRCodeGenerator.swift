@@ -18,7 +18,7 @@ public typealias QRColor = NSColor
 public typealias QRImage = NSImage
 #endif
 
-@available(OSX 10.10, *)
+@available(OSX 10.9, *)
 @objc
 public class QRCodeGenerator : NSObject {
     
@@ -33,34 +33,42 @@ public class QRCodeGenerator : NSObject {
         case H = "H"
     }
     
-    private func imageWithImageFilter(inputImage:CIImage) -> CIImage {
+    private func outputImageFromFilter(filter:CIFilter) -> CIImage? {
+        if #available(OSX 10.10, *) {
+            return filter.outputImage
+        } else {
+            return filter.valueForKey("outputImage") as? CIImage ?? nil
+        }
+    }
+    
+    private func imageWithImageFilter(inputImage:CIImage) -> CIImage? {
         if let colorFilter = CIFilter(name: "CIFalseColor") {
             colorFilter.setDefaults()
             colorFilter.setValue(inputImage, forKey: "inputImage")
             colorFilter.setValue(CIColor(CGColor: foregroundColor.CGColor), forKey: "inputColor0")
             colorFilter.setValue(CIColor(CGColor: backgroundColor.CGColor), forKey: "inputColor1")
-            return colorFilter.outputImage!
+            return outputImageFromFilter(colorFilter)
         }
-        return CIImage()
+        return nil
     }
     
-    public func createImage(value:String, size:CGSize) -> QRImage {
+    public func createImage(value:String, size:CGSize) -> QRImage? {
         let stringData = value.dataUsingEncoding(NSISOLatin1StringEncoding, allowLossyConversion: true)
         if let qrFilter = CIFilter(name: "CIQRCodeGenerator") {
             qrFilter.setDefaults()
             qrFilter.setValue(stringData, forKey: "inputMessage")
             qrFilter.setValue(correctionLevel.rawValue, forKey: "inputCorrectionLevel")
             
-            let outputImage = imageWithImageFilter(qrFilter.outputImage!)
-            let image = createNonInterpolatedImageFromCIImage(outputImage, size: size)
-            return image
+            guard let filterOutputImage = outputImageFromFilter(qrFilter) else { return nil }
+            guard let outputImage = imageWithImageFilter(filterOutputImage) else { return nil }
+            return createNonInterpolatedImageFromCIImage(outputImage, size: size)
         }
-        return QRImage()
+        return nil
     }
     
     
     #if os(iOS)
-    private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage {
+    private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage? {
     
         #if (arch(i386) || arch(x86_64))
         let contextOptions = [kCIContextUseSoftwareRenderer : false]
@@ -68,9 +76,9 @@ public class QRCodeGenerator : NSObject {
         let contextOptions = [kCIContextUseSoftwareRenderer : true]
         #endif
     
-        let cgImage = CIContext(options: contextOptions).createCGImage(image, fromRect: image.extent)
+        guard let cgImage = CIContext(options: contextOptions).createCGImage(image, fromRect: image.extent) else { return nil }
         UIGraphicsBeginImageContextWithOptions(size,false,0.0)
-        let context = UIGraphicsGetCurrentContext()
+        guard let context = UIGraphicsGetCurrentContext() else { return nil }
         CGContextSetInterpolationQuality(context, CGInterpolationQuality.None)
         CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -79,22 +87,23 @@ public class QRCodeGenerator : NSObject {
     }
     
     #elseif os(OSX)
-    private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage {
-        let cgImage = CIContext().createCGImage(image, fromRect: image.extent)
+    private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage? {
+        guard let cgImage = CIContext().createCGImage(image, fromRect: image.extent) else { return nil }
         let newImage = QRImage(size: size)
         newImage.lockFocus()
         let contextPointer = NSGraphicsContext.currentContext()!.graphicsPort
-        var context:CGContextRef!
+        var context:CGContextRef?
         
-        //OSX >= 10.10 supports CGContext property
-        if NSGraphicsContext.currentContext()!.respondsToSelector(Selector("CGContext")) {
-            context = NSGraphicsContext.currentContext()!.CGContext
+        if #available(OSX 10.10, *) {
+            //OSX >= 10.10 supports CGContext property
+            context = NSGraphicsContext.currentContext()?.CGContext
         } else {
             context = unsafeBitCast(contextPointer, CGContext.self)
         }
-        
-        CGContextSetInterpolationQuality(context, CGInterpolationQuality.None)
-        CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage)
+    
+        guard let graphicsContext = context else { return nil }
+        CGContextSetInterpolationQuality(graphicsContext, CGInterpolationQuality.None)
+        CGContextDrawImage(graphicsContext, CGContextGetClipBoundingBox(graphicsContext), cgImage)
         newImage.unlockFocus()
         return newImage
     }
