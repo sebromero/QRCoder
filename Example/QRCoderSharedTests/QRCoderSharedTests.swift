@@ -13,7 +13,7 @@ class QRCoderSharedTests: XCTestCase {
     
     var qrCodeGenerator:QRCodeGenerator!
     let qrCodeContent = "Hello World"
-    let imageSize = CGSizeMake(100, 100)
+    let imageSize = CGSize(width: 100, height: 100)
     
     override func setUp() {
         super.setUp()

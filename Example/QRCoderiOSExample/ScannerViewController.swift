@@ -11,13 +11,13 @@ import QRCoder
 
 class ScannerViewController : QRCodeScannerViewController {
     
-    override func processQRCodeContent(qrCodeContent: String) -> Bool {
+    override func processQRCodeContent(_ qrCodeContent: String) -> Bool {
         print(qrCodeContent)
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
         return true
     }
     
-    @IBAction func goBack(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func goBack(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
 }
