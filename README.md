@@ -77,6 +77,15 @@ it, simply add the following line to your Podfile:
 pod "QRCoder"
 ```
 
+## Version Compatibility
+
+Current Swift compatibility breakdown:
+
+| Swift Version | Framework Version |
+| ------------- | ----------------- |
+| 4.1	        | 1.x          		|
+| 2.3	        | 0.x          		|
+
 ## Todo
 
 * Add QR code scanner for OS X
