@@ -17,7 +17,7 @@ class ScannerViewController : QRCodeScannerViewController {
         return true
     }
     
-    @IBAction func goBack(sender: AnyObject) {
+    @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
 }

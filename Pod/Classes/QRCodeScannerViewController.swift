@@ -65,6 +65,8 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
         
         if let captureInput = deviceInput {
             captureSession.addInput(captureInput)
+        } else {
+            return
         }
         
         captureSession.addOutput(metadataOutput)
