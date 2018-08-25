@@ -320,6 +320,7 @@
 				F3B3C7911AEEACF30011548D /* Sources */,
 				F3B3C7921AEEACF30011548D /* Frameworks */,
 				F3B3C7931AEEACF30011548D /* Resources */,
+				17B689EDCDEAE2E1F9D15CDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +339,7 @@
 				F3B3C7A01AEEACF30011548D /* Sources */,
 				F3B3C7A11AEEACF30011548D /* Frameworks */,
 				F3B3C7A21AEEACF30011548D /* Resources */,
+				1F5FBB06BA0D7871B2A4F490 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,6 +453,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRCoderiOSTests/Pods-QRCoderiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17B689EDCDEAE2E1F9D15CDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QRCoder-macOS/QRCoder.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCoder.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F5FBB06BA0D7871B2A4F490 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QRCoderOSXTests/Pods-QRCoderOSXTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/QRCoder-macOS/QRCoder.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCoder.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRCoderOSXTests/Pods-QRCoderOSXTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4F78480C474B36CBD2A800F8 /* [CP] Check Pods Manifest.lock */ = {
