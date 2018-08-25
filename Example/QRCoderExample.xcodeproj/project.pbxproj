@@ -460,15 +460,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QRCoderOSXExample/Pods-QRCoderOSXExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/QRCoder-macOS/QRCoder.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCoder.framework",
 			);
@@ -482,15 +478,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QRCoderOSXTests/Pods-QRCoderOSXTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/QRCoder-macOS/QRCoder.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCoder.framework",
 			);
@@ -958,7 +950,7 @@
 				6003F5BE195388D20070C39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F3529A1D1AEEC47000642EC3 /* Build configuration list for PBXNativeTarget "QRCoderiOSExample" */ = {
 			isa = XCConfigurationList;
@@ -967,7 +959,7 @@
 				F3529A1A1AEEC47000642EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F3529A1E1AEEC47000642EC3 /* Build configuration list for PBXNativeTarget "QRCoderiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -976,7 +968,7 @@
 				F3529A1C1AEEC47000642EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F3B3C7AC1AEEACF30011548D /* Build configuration list for PBXNativeTarget "QRCoderOSXExample" */ = {
 			isa = XCConfigurationList;
@@ -985,7 +977,7 @@
 				F3B3C7AE1AEEACF30011548D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		F3B3C7AF1AEEACF30011548D /* Build configuration list for PBXNativeTarget "QRCoderOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -994,7 +986,7 @@
 				F3B3C7B11AEEACF30011548D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
