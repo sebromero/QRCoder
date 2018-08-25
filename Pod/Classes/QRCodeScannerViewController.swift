@@ -8,25 +8,36 @@
 import UIKit
 import AVFoundation
 
-public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
+open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
 {
+    private let metadataObjectsQueue = DispatchQueue(label: "com.sbhklr.qr", attributes: [], target: nil)
     var captureSession: AVCaptureSession = AVCaptureSession()
-    var captureDevice:AVCaptureDevice? = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+    var captureDevice:AVCaptureDevice? = AVCaptureDevice.default(for: AVMediaType.video)
     var deviceInput:AVCaptureDeviceInput?
     var metadataOutput:AVCaptureMetadataOutput = AVCaptureMetadataOutput()
     var videoPreviewLayer:AVCaptureVideoPreviewLayer!
+    
+    /**
+     * The highlight view by default shows a green border around the area where
+     * the QR code was found.
+     */
     public var highlightView:UIView = UIView()
+    
+    /**
+     * Defines whether the highlight view is shown upon QR code detection.
+     */
+    public var showHighlightView:Bool = true
     
     //MARK: Lifecycle
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        highlightView.autoresizingMask = [.FlexibleTopMargin, .FlexibleLeftMargin, .FlexibleRightMargin, .FlexibleBottomMargin]
-        highlightView.layer.borderColor = UIColor.greenColor().CGColor
+        highlightView.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin]
+        highlightView.layer.borderColor = UIColor.green.cgColor
         highlightView.layer.borderWidth = 3
 
-        let preset = AVCaptureSessionPresetHigh
+        let preset = AVCaptureSession.Preset.high
         if(captureSession.canSetSessionPreset(preset)) {
             captureSession.sessionPreset = preset
         }
@@ -34,74 +45,76 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
     }
     
-    override public func viewDidLayoutSubviews() {
+    override open func viewDidLayoutSubviews() {
         videoPreviewLayer.frame = view.bounds
     }
     
-    override public func viewDidLoad()
+    override open func viewDidLoad()
     {
         super.viewDidLoad()
         view.addSubview(highlightView)
         
+        guard let captureDevice = self.captureDevice else { return }
+        
         do {
             deviceInput = try AVCaptureDeviceInput(device: captureDevice)
         } catch let error as NSError {
-             didFailWithError(error)
+            didFailWithError(error: error)
             return
         }
         
         if let captureInput = deviceInput {
             captureSession.addInput(captureInput)
+        } else {
+            return
         }
         
-        metadataOutput.setMetadataObjectsDelegate(self, queue:dispatch_get_main_queue())
         captureSession.addOutput(metadataOutput)
+        metadataOutput.setMetadataObjectsDelegate(self, queue:metadataObjectsQueue)
+        metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
         
-        metadataOutput.metadataObjectTypes = metadataOutput.availableMetadataObjectTypes
-        
-        videoPreviewLayer.frame = self.view.bounds;
-        videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+        videoPreviewLayer.frame = self.view.bounds
+        videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         view.layer.addSublayer(videoPreviewLayer)
-        view.bringSubviewToFront(highlightView)
+        view.bringSubview(toFront: highlightView)
     }
     
-    override public func viewDidAppear(animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         startQRCodeScanningSession()
     }
     
-    override public func viewWillDisappear(animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         captureSession.stopRunning()
     }
     
-    public override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        
-        coordinator.animateAlongsideTransition({ (context) -> Void in
-            let orientation = UIApplication.sharedApplication().statusBarOrientation
-            self.updateVideoOrientation(orientation)
+    open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { (context) -> Void in
+            let orientation = UIApplication.shared.statusBarOrientation
+            self.updateVideoOrientation(orientation: orientation)
         }, completion: nil)
         
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        super.viewWillTransition(to: size, with: coordinator)
     }
     
     private func updateVideoOrientation(orientation:UIInterfaceOrientation){
 
         switch orientation {
-        case .Portrait :
-            videoPreviewLayer.connection?.videoOrientation = .Portrait
+        case .portrait :
+            videoPreviewLayer.connection?.videoOrientation = .portrait
             break
-        case .PortraitUpsideDown :
-            videoPreviewLayer.connection?.videoOrientation = .PortraitUpsideDown
+        case .portraitUpsideDown :
+            videoPreviewLayer.connection?.videoOrientation = .portraitUpsideDown
             break
-        case .LandscapeLeft :
-            videoPreviewLayer.connection?.videoOrientation = .LandscapeLeft
+        case .landscapeLeft :
+            videoPreviewLayer.connection?.videoOrientation = .landscapeLeft
             break
-        case .LandscapeRight :
-            videoPreviewLayer.connection?.videoOrientation = .LandscapeRight
+        case .landscapeRight :
+            videoPreviewLayer.connection?.videoOrientation = .landscapeRight
             break
         default:
-            videoPreviewLayer.connection?.videoOrientation = .Portrait
+            videoPreviewLayer.connection?.videoOrientation = .portrait
         }
     }
     
@@ -113,7 +126,7 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
     * @param qrCodeContent The content of the QR code as string.
     * @return A booloean indicating whether the QR code could be processed.
     **/
-     public func processQRCodeContent(qrCodeContent:String) -> Bool {
+     open func processQRCodeContent(qrCodeContent:String) -> Bool {
         print(qrCodeContent)
         return false
     }
@@ -131,8 +144,8 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
      * Starts the scanning session using the built in camera.
      **/
     public func startQRCodeScanningSession(){
-        updateVideoOrientation(UIApplication.sharedApplication().statusBarOrientation)
-        highlightView.frame = CGRectZero
+        updateVideoOrientation(orientation: UIApplication.shared.statusBarOrientation)
+        highlightView.frame = CGRect.zero
         captureSession.startRunning()
     }
     
@@ -141,44 +154,53 @@ public class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOut
      */
     public func stopQRCodeScanningSession(){
         captureSession.stopRunning()
-        highlightView.frame = CGRectZero
+        highlightView.frame = CGRect.zero
     }
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
     
-    public func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+    public func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         
-        var highlightViewRect = CGRectZero
+        var highlightViewRect = CGRect.zero
         var barCodeObject: AVMetadataMachineReadableCodeObject
-        var detectionString:String?
-        self.highlightView.frame = highlightViewRect
+        var detectedString:String?
         
-        for metadata in metadataObjects {
-            if let metadataObject = metadata as? AVMetadataObject {
+        for metadataObject in metadataObjects {
+            
+            if (metadataObject.type == AVMetadataObject.ObjectType.qr) {
+                barCodeObject = videoPreviewLayer.transformedMetadataObject(for: metadataObject) as! AVMetadataMachineReadableCodeObject
+                highlightViewRect = barCodeObject.bounds
                 
-                if (metadataObject.type == AVMetadataObjectTypeQRCode) {
-                    barCodeObject = videoPreviewLayer.transformedMetadataObjectForMetadataObject(metadataObject) as! AVMetadataMachineReadableCodeObject
-                    highlightViewRect = barCodeObject.bounds
-                    self.highlightView.frame = highlightViewRect
-                    
-                    if let machineReadableObject = metadataObject as? AVMetadataMachineReadableCodeObject {
-                        detectionString = machineReadableObject.stringValue
+                if let machineReadableObject = metadataObject as? AVMetadataMachineReadableCodeObject {
+                    detectedString = machineReadableObject.stringValue
+                }
+            }
+            
+            if let qrCode = detectedString {
+                processDetectionResult(qrCode: qrCode, highlightViewRect: highlightViewRect)
+                return
+            }
+        }
+    }
+    
+    private func processDetectionResult(qrCode:String, highlightViewRect:CGRect) {
+        captureSession.stopRunning()
+        
+        if !showHighlightView && !self.processQRCodeContent(qrCodeContent: qrCode) {
+            self.captureSession.startRunning()
+        } else {
+            DispatchQueue.main.sync {
+                self.highlightView.frame = highlightViewRect
+                
+                UIView.animate(withDuration: 0.5, animations: { () -> Void in
+                    self.highlightView.alpha = 0
+                }, completion: { (complete) -> Void in
+                    if !self.processQRCodeContent(qrCodeContent: qrCode) {
+                        self.highlightView.frame = CGRect.zero
+                        self.highlightView.alpha = 1
+                        self.captureSession.startRunning()
                     }
-                }
-                
-                if let qrCodeContent = detectionString {
-                    captureSession.stopRunning()
-                    UIView.animateWithDuration(0.5, animations: { () -> Void in
-                        self.highlightView.alpha = 0
-                    }, completion: { (complete) -> Void in
-                        if !self.processQRCodeContent(qrCodeContent) {
-                            self.highlightView.frame = CGRectZero
-                            self.highlightView.alpha = 1
-                            self.captureSession.startRunning()
-                        }
-                    })
-                    return
-                }
+                })
             }
         }
     }
