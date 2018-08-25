@@ -1,0 +1,6 @@
+framework module QRCoder {
+  umbrella header "QRCoder-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
