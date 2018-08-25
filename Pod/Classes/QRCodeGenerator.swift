@@ -91,22 +91,24 @@ public class QRCodeGenerator : NSObject {
     
     #elseif os(OSX)
     private func createNonInterpolatedImageFromCIImage(image:CIImage, size:CGSize) -> QRImage? {
-        guard let cgImage = CIContext().createCGImage(image, fromRect: image.extent) else { return nil }
+        guard let cgImage = CIContext().createCGImage(image, from: image.extent) else { return nil }
         let newImage = QRImage(size: size)
         newImage.lockFocus()
-        let contextPointer = NSGraphicsContext.currentContext()!.graphicsPort
-        var context:CGContextRef?
+        let contextPointer = NSGraphicsContext.current!.graphicsPort
+        var context:CGContext?
         
         if #available(OSX 10.10, *) {
             //OSX >= 10.10 supports CGContext property
-            context = NSGraphicsContext.currentContext()?.CGContext
+            context = NSGraphicsContext.current?.cgContext
         } else {
-            context = unsafeBitCast(contextPointer, CGContext.self)
+            context = unsafeBitCast(contextPointer, to: CGContext.self)
         }
     
         guard let graphicsContext = context else { return nil }
-        CGContextSetInterpolationQuality(graphicsContext, CGInterpolationQuality.None)
-        CGContextDrawImage(graphicsContext, CGContextGetClipBoundingBox(graphicsContext), cgImage)
+        graphicsContext.interpolationQuality = CGInterpolationQuality.none
+        graphicsContext.setShouldAntialias(false)
+        
+        graphicsContext.draw(cgImage, in: graphicsContext.boundingBoxOfClipPath)        
         newImage.unlockFocus()
         return newImage
     }

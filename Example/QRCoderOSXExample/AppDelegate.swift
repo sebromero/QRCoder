@@ -17,9 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var imageView: NSImageView!
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ notification: Notification) {
         let generator = QRCodeGenerator()
-        imageView.image = generator.createImage("Hello world!",size: CGSizeMake(200,200))
+        imageView.image = generator.createImage(value: "Hello world!",size: CGSize(width: 200, height: 200))
     }
     
 }
