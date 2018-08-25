@@ -10,6 +10,7 @@ import AVFoundation
 
 open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
 {
+    private let metadataObjectsQueue = DispatchQueue(label: "com.sbhklr.qr", attributes: [], target: nil)
     var captureSession: AVCaptureSession = AVCaptureSession()
     var captureDevice:AVCaptureDevice? = AVCaptureDevice.default(for: AVMediaType.video)
     var deviceInput:AVCaptureDeviceInput?
@@ -66,10 +67,9 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
             captureSession.addInput(captureInput)
         }
         
-        metadataOutput.setMetadataObjectsDelegate(self, queue:DispatchQueue.main)
         captureSession.addOutput(metadataOutput)
-        
-        metadataOutput.metadataObjectTypes = metadataOutput.availableMetadataObjectTypes
+        metadataOutput.setMetadataObjectsDelegate(self, queue:metadataObjectsQueue)
+        metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
         
         videoPreviewLayer.frame = self.view.bounds
         videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
@@ -157,49 +157,49 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
     
-    public func captureOutput(captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [AnyObject]!, fromConnection connection: AVCaptureConnection!) {
+    public func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         
         var highlightViewRect = CGRect.zero
         var barCodeObject: AVMetadataMachineReadableCodeObject
         var detectedString:String?
-        self.highlightView.frame = highlightViewRect
         
-        for metadata in metadataObjects {
-            if let metadataObject = metadata as? AVMetadataObject {
+        for metadataObject in metadataObjects {
+            
+            if (metadataObject.type == AVMetadataObject.ObjectType.qr) {
+                barCodeObject = videoPreviewLayer.transformedMetadataObject(for: metadataObject) as! AVMetadataMachineReadableCodeObject
+                highlightViewRect = barCodeObject.bounds
                 
-                if (metadataObject.type == AVMetadataObject.ObjectType.qr) {
-                    barCodeObject = videoPreviewLayer.transformedMetadataObject(for: metadataObject) as! AVMetadataMachineReadableCodeObject
-                    highlightViewRect = barCodeObject.bounds
-                    self.highlightView.frame = highlightViewRect
-                    
-                    if let machineReadableObject = metadataObject as? AVMetadataMachineReadableCodeObject {
-                        detectedString = machineReadableObject.stringValue
-                    }
+                if let machineReadableObject = metadataObject as? AVMetadataMachineReadableCodeObject {
+                    detectedString = machineReadableObject.stringValue
                 }
-                
-                if let qrCode = detectedString {
-                    processDetectionResult(qrCode: qrCode)
-                    return
-                }
+            }
+            
+            if let qrCode = detectedString {
+                processDetectionResult(qrCode: qrCode, highlightViewRect: highlightViewRect)
+                return
             }
         }
     }
     
-    private func processDetectionResult(qrCode:String) {
+    private func processDetectionResult(qrCode:String, highlightViewRect:CGRect) {
         captureSession.stopRunning()
         
         if !showHighlightView && !self.processQRCodeContent(qrCodeContent: qrCode) {
             self.captureSession.startRunning()
         } else {
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
-                self.highlightView.alpha = 0
-            }, completion: { (complete) -> Void in
-                if !self.processQRCodeContent(qrCodeContent: qrCode) {
-                    self.highlightView.frame = CGRect.zero
-                    self.highlightView.alpha = 1
-                    self.captureSession.startRunning()
-                }
-            })
+            DispatchQueue.main.sync {
+                self.highlightView.frame = highlightViewRect
+                
+                UIView.animate(withDuration: 0.5, animations: { () -> Void in
+                    self.highlightView.alpha = 0
+                }, completion: { (complete) -> Void in
+                    if !self.processQRCodeContent(qrCodeContent: qrCode) {
+                        self.highlightView.frame = CGRect.zero
+                        self.highlightView.alpha = 1
+                        self.captureSession.startRunning()
+                    }
+                })
+            }
         }
     }
     
