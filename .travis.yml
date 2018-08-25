@@ -12,6 +12,6 @@ language: objective-c
 install:
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail && xcodebuild test -workspace Example/QRCoderExample.xcworkspace -scheme QRCoderiOSExample -destination 'platform=iOS Simulator,name=iPhone 8,OS=8.0' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- set -o pipefail && xcodebuild test -workspace Example/QRCoderExample.xcworkspace -scheme QRCoderiOSExample -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.0' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - set -o pipefail && xcodebuild test -workspace Example/QRCoderExample.xcworkspace -scheme QRCoderOSXExample -sdk macosx ONLY_ACTIVE_ARCH=NO | xcpretty -c
 - pod lib lint --quick
