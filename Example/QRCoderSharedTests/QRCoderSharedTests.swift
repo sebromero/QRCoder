@@ -47,7 +47,14 @@ class QRCoderSharedTests: XCTestCase {
     }
     
     func messageFromImage(image:QRImage) -> String?{
-        let ciImage = CIImage(cgImage: image.cgImage!)
+                
+        #if os(iOS)
+        let cgImage = image.cgImage!
+        #elseif os(OSX)
+        guard let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) else { return nil }
+        #endif
+        
+        let ciImage = CIImage(cgImage: cgImage)
         XCTAssertNotNil(ciImage)
         let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: nil)
         
