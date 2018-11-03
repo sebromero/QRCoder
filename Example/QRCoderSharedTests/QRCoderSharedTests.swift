@@ -12,7 +12,7 @@ import QRCoder
 class QRCoderSharedTests: XCTestCase {
     
     var qrCodeGenerator:QRCodeGenerator!
-    let qrCodeContent = "Hello World"
+    let qrCodeContent = "Hello World! 你好!"
     let imageSize = CGSize(width: 100, height: 100)
     
     override func setUp() {
@@ -24,6 +24,44 @@ class QRCoderSharedTests: XCTestCase {
         guard let image = qrCodeGenerator.createImage(value: qrCodeContent, size: imageSize) else { XCTFail(); return }
         XCTAssertNotNil(image)
         XCTAssertEqual(image.size, imageSize)
+    }
+    
+    func testImageFromURL() {
+        let url = URL(string: "http://www.test.com")!
+        guard let image = qrCodeGenerator.createImage(url: url, size: imageSize) else { XCTFail(); return }
+        let decodedMessage = messageFromImage(image: image)
+        XCTAssertEqual(decodedMessage, "http://www.test.com")
+    }
+    
+    func testImageFromData() {
+        let data = "hello".data(using: .isoLatin1)!
+        guard let image = qrCodeGenerator.createImage(data: data, size: imageSize) else { XCTFail(); return }
+        let decodedMessage = messageFromImage(image: image)
+        XCTAssertEqual(decodedMessage, "hello")
+    }
+    
+    func testStringFromImage() {
+        guard let image = qrCodeGenerator.createImage(value: qrCodeContent, size: imageSize, encoding: .utf8) else { XCTFail(); return }
+        let decodedMessage = messageFromImage(image: image)
+        XCTAssertEqual(decodedMessage, qrCodeContent)
+    }
+    
+    func messageFromImage(image:QRImage) -> String?{
+        let ciImage = CIImage(cgImage: image.cgImage!)
+        XCTAssertNotNil(ciImage)
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: nil)
+        
+        var decodedMessage = ""
+        if let detector = detector {
+            let features = detector.features(in: ciImage)
+            for feature in features as! [CIQRCodeFeature] {
+                decodedMessage = feature.messageString!
+                if !decodedMessage.isEmpty {
+                    return decodedMessage
+                }
+            }
+        }
+        return nil
     }
     
     func testImageWithDifferentCorrectionLevels(){

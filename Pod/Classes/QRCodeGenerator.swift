@@ -52,16 +52,28 @@ public class QRCodeGenerator : NSObject {
         return nil
     }
     
-    public func createImage(value:String, size:CGSize) -> QRImage? {
-        let stringData = value.data(using: String.Encoding.isoLatin1, allowLossyConversion: true)
+    public func createImage(url:URL, size:CGSize) -> QRImage? {
+        let convertedURL = url.absoluteString
+        return createImage(value: convertedURL, size: size)
+        
+    }
+    
+    public func createImage(data:Data, size:CGSize) -> QRImage? {
         if let qrFilter = CIFilter(name: "CIQRCodeGenerator") {
             qrFilter.setDefaults()
-            qrFilter.setValue(stringData, forKey: "inputMessage")
+            qrFilter.setValue(data, forKey: "inputMessage")
             qrFilter.setValue(correctionLevel.rawValue, forKey: "inputCorrectionLevel")
             
             guard let filterOutputImage = outputImageFromFilter(filter: qrFilter) else { return nil }
             guard let outputImage = imageWithImageFilter(inputImage: filterOutputImage) else { return nil }
             return createNonInterpolatedImageFromCIImage(image: outputImage, size: size)
+        }
+        return nil
+    }
+    
+    public func createImage(value:String, size:CGSize, encoding: String.Encoding = String.Encoding.isoLatin1) -> QRImage? {
+        if let stringData = value.data(using: encoding, allowLossyConversion: true){
+            return createImage(data: stringData, size: size)
         }
         return nil
     }
