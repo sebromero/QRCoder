@@ -22,15 +22,33 @@ public typealias QRImage = NSImage
 @objc
 open class QRCodeGenerator : NSObject {
     
-    public var backgroundColor:QRColor = QRColor.white
-    public var foregroundColor:QRColor = QRColor.black
-    public var correctionLevel:CorrectionLevel = .M
+    public var backgroundColor:QRColor
+    public var foregroundColor:QRColor
+    public var correctionLevel:CorrectionLevel
     
     public enum CorrectionLevel : String {
         case L = "L"
         case M = "M"
         case Q = "Q"
         case H = "H"
+    }
+    
+    public override convenience init(){        
+        self.init(backgroundColor: QRColor.white, foregroundColor: QRColor.black, correctionLevel: .M)
+    }
+    
+    public convenience init(backgroundColor:QRColor, foregroundColor:QRColor) {
+        self.init(backgroundColor: backgroundColor, foregroundColor: foregroundColor, correctionLevel: .M)
+    }
+    
+    public convenience init(correctionLevel:CorrectionLevel = .M) {
+        self.init(backgroundColor: QRColor.white, foregroundColor: QRColor.black, correctionLevel: correctionLevel)
+    }
+    
+    public init(backgroundColor:QRColor, foregroundColor:QRColor, correctionLevel:CorrectionLevel){
+        self.backgroundColor = backgroundColor
+        self.foregroundColor = foregroundColor
+        self.correctionLevel = correctionLevel
     }
     
     private func outputImageFromFilter(filter:CIFilter) -> CIImage? {
