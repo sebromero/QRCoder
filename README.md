@@ -35,6 +35,11 @@ You can set the correction level to one of the values [L,M,Q,H]. The meaning is 
 - Level Q – up to 25% damage
 - Level H – up to 30% damage
 
+Example usage:
+```
+let generator = QRCodeGenerator(correctionLevel: .H)
+```
+
 ## Usage: Scanner (iOS)
 
 <img src="https://raw.githubusercontent.com/sbhklr/QRCoder/master/screenshots/ios_scanner.png" width="250" />
