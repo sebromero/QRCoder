@@ -20,7 +20,7 @@ public typealias QRImage = NSImage
 
 @available(OSX 10.9, *)
 @objc
-public class QRCodeGenerator : NSObject {
+open class QRCodeGenerator : NSObject {
     
     public var backgroundColor:QRColor = QRColor.white
     public var foregroundColor:QRColor = QRColor.black
@@ -52,13 +52,13 @@ public class QRCodeGenerator : NSObject {
         return nil
     }
     
-    public func createImage(url:URL, size:CGSize) -> QRImage? {
+    open func createImage(url:URL, size:CGSize) -> QRImage? {
         let convertedURL = url.absoluteString
         return createImage(value: convertedURL, size: size)
         
     }
     
-    public func createImage(data:Data, size:CGSize) -> QRImage? {
+    open func createImage(data:Data, size:CGSize) -> QRImage? {
         if let qrFilter = CIFilter(name: "CIQRCodeGenerator") {
             qrFilter.setDefaults()
             qrFilter.setValue(data, forKey: "inputMessage")
@@ -71,7 +71,7 @@ public class QRCodeGenerator : NSObject {
         return nil
     }
     
-    public func createImage(value:String, size:CGSize, encoding: String.Encoding = String.Encoding.isoLatin1) -> QRImage? {
+    open func createImage(value:String, size:CGSize, encoding: String.Encoding = String.Encoding.isoLatin1) -> QRImage? {
         if let stringData = value.data(using: encoding, allowLossyConversion: true){
             return createImage(data: stringData, size: size)
         }
