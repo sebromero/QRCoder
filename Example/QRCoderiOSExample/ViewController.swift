@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let generator = QRCodeGenerator()
-        imageView.image = generator.createImage(value: "Hello world!",size: CGSize(width: 200, height: 200))
+        imageView.image = generator.createImage(value: "Hello World! 你好!",size: CGSize(width: 250, height: 250), encoding: .utf8)
     }
 
 }

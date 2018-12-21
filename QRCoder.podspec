@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "QRCoder"
-s.version          = "1.0.0"
+s.version          = "1.1.0"
 s.summary          = "A QR code generator and scanner for OSX and iOS written in Swift."
 s.description      = <<-DESC
 Since OSX 10.9 / iOS 7 apple offers a CI filter to generate QR codes.
