@@ -29,10 +29,18 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     public var showHighlightView:Bool = true
     
     //MARK: Lifecycle
+
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+        setup()
+    }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+        setup()
+    }
+
+    private func setup() {
         highlightView.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin]
         highlightView.layer.borderColor = UIColor.green.cgColor
         highlightView.layer.borderWidth = 3
@@ -76,7 +84,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
         videoPreviewLayer.frame = self.view.bounds
         videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         view.layer.addSublayer(videoPreviewLayer)
-        view.bringSubview(toFront: highlightView)
+      view.bringSubviewToFront(highlightView)
     }
     
     override open func viewDidAppear(_ animated: Bool) {
@@ -136,7 +144,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     * in subclasses to detect error. Do not dismiss controller immediately.
     * @param error The error object
     **/
-    public func didFailWithError(error: NSError) {
+    open func didFailWithError(error: NSError) {
         print("Error: \(error.description)")
     }
     
