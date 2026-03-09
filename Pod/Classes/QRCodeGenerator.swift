@@ -103,7 +103,7 @@ open class QRCodeGenerator : NSObject {
         #if (arch(i386) || arch(x86_64))
         let contextOptions = [CIContextOption.useSoftwareRenderer : false]
         #else
-      let contextOptions = [CIContextOption.useSoftwareRenderer : true]
+        let contextOptions = [CIContextOption.useSoftwareRenderer : true]
         #endif
     
         guard let cgImage = CIContext(options: contextOptions).createCGImage(image, from: image.extent) else { return nil }
