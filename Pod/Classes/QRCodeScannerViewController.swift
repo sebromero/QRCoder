@@ -29,10 +29,18 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     public var showHighlightView:Bool = true
     
     //MARK: Lifecycle
+
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+        setup()
+    }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        
+        setup()
+    }
+
+    private func setup() {
         highlightView.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleRightMargin, .flexibleBottomMargin]
         highlightView.layer.borderColor = UIColor.green.cgColor
         highlightView.layer.borderWidth = 3
@@ -76,7 +84,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
         videoPreviewLayer.frame = self.view.bounds
         videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         view.layer.addSublayer(videoPreviewLayer)
-        view.bringSubview(toFront: highlightView)
+        view.bringSubviewToFront(highlightView)
     }
     
     override open func viewDidAppear(_ animated: Bool) {
@@ -86,7 +94,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     
     override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        captureSession.stopRunning()
+        stopRunning()
     }
     
     open override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -136,7 +144,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     * in subclasses to detect error. Do not dismiss controller immediately.
     * @param error The error object
     **/
-    public func didFailWithError(error: NSError) {
+    open func didFailWithError(error: NSError) {
         print("Error: \(error.description)")
     }
     
@@ -146,15 +154,26 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
     public func startQRCodeScanningSession(){
         updateVideoOrientation(orientation: UIApplication.shared.statusBarOrientation)
         highlightView.frame = CGRect.zero
-        captureSession.startRunning()
+        startRunning()
     }
     
     /**
      Stops the scanning session
      */
     public func stopQRCodeScanningSession(){
-        captureSession.stopRunning()
+        stopRunning()
         highlightView.frame = CGRect.zero
+    }
+    
+    private func startRunning() {
+        DispatchQueue.global(qos: .background).async {
+	    	self.captureSession.startRunning()
+    	}
+    }
+    private func stopRunning() {
+        DispatchQueue.global(qos: .background).async {
+	    	self.captureSession.stopRunning()
+    	}        
     }
     
     //MARK: AVCaptureMetadataOutputObjectsDelegate
@@ -187,7 +206,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
         captureSession.stopRunning()
         
         if !showHighlightView && !self.processQRCodeContent(qrCodeContent: qrCode) {
-            self.captureSession.startRunning()
+            captureSession.startRunning()
         } else {
             DispatchQueue.main.sync {
                 self.highlightView.frame = highlightViewRect
