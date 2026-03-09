@@ -84,7 +84,7 @@ open class QRCodeScannerViewController: UIViewController, AVCaptureMetadataOutpu
         videoPreviewLayer.frame = self.view.bounds
         videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         view.layer.addSublayer(videoPreviewLayer)
-      view.bringSubviewToFront(highlightView)
+        view.bringSubviewToFront(highlightView)
     }
     
     override open func viewDidAppear(_ animated: Bool) {
